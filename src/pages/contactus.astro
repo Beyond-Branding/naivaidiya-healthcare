@@ -2,59 +2,68 @@
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout>
-  <section class="map-section">
-        <!--Map Outer-->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    
+    <style>
+        #leaflet-map {
+            height: 480px;
+            width: 100%;
+        }
+        .directions-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white !important;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+
+    <section class="map-section">
         <div class="map-outer">
-            <div class="google-map"
-                id="contact-google-map" 
-                data-map-lat="44.231172" 
-                data-map-lng="-76.485954" 
-                data-icon-path="/assets/image/icons/map-marker.png" 
-                data-map-title="Alabama, USA" 
-                data-map-zoom="12" 
-                data-markers='{
-                "marker-1": [42.231172, -84.485954, "<h4>Branch Office</h4><p>4/99 Alabama, USA</p>"],
-                "marker-2": [44.231172, -76.485954, "<h4>Branch Office</h4><p>4/99 Alabama, USA</p>"],
-                "marker-3": [40.880550, -78.393705, "<h4>Branch Office</h4><p>4/99 Pennsylvania, USA</p>"]
-                }'>
-            </div>
+            <div id="leaflet-map"></div>
         </div>
     </section>
     
-    <!-------------map--------------->
-
-    <!------------contact_address--------------->
     <div class="contact_address">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="contact_address_inner">
                         <div class="contact_our_office">
-                            <h2>Our <span>Office</span></h2>
-                            <p>7088 Micaela Cliffs, Thielshire, <br/> 
-                                OK 95062</p>
+                            <h2><span>Address</span></h2>
+                            <p>2nd Floor, Advani Chambers, 574, August Kranti Rd, Kemps Corner, 
+Malabar Hill, Mumbai, Maharashtra 400026
+                            </p>
                         </div>
                         <div class="contact_get_in_touch">
                             <h2>Get in <span>Touch</span></h2>
                             <div class="mail">
                                 <p>EMAIL<br/>
-                                <a href="mailto:contact@meditex.com">contact@meditex.com</a></p>
+                                <a href="mailto:naivaidyahealthcare@gmail.com">naivaidyahealthcare@gmail.com</a></p>
                             </div>
                             <div class="phone">
                                 <p>Phone number<br/>
-                                    <a href="#" class="phne">(052) 611-5711</a> </p>
+                                    <a href="tel:8591420775" class="phne">(+91) 8591420775</a> </p>
                             </div>
                         </div>
                         <div class="contact_social_media">
                             <ul>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                <li><a href="#"><i class="fa fa-wifi"></i></a></li>
+                                
                             </ul>
                         </div>
                     </div>
                 </div>
+
+                
                 <div class="col-lg-8 col-md-8 col-sm-12">
                     <div class="contact_pg_form">
                         <form id="contact-form" method="post" action="https://formspree.io/f/your_form_id" role="form">
@@ -96,5 +105,43 @@ import Layout from '../layouts/Layout.astro';
             </div>
         </div>
     </div>
-    <!------------contact_address--------------->
+
+
+    <script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <script is:inline>
+        const lat = 18.9636;
+        const lng = 72.8066;
+        const zoom = 16;
+        const map = L.map('leaflet-map').setView([lat, lng], zoom);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        const redIcon = new L.Icon({
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
+
+        const marker = L.marker([lat, lng], { icon: redIcon }).addTo(map);
+
+        const popupContent = `
+            <h4>Naivaidya Clinic</h4>
+            <p>2nd Floor, Advani Chambers, Kemps Corner, Malabar Hill, Mumbai</p>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}" class="directions-button" target="_blank">
+                Get Directions
+            </a>
+        `;
+
+        marker.bindPopup(popupContent);
+
+    </script>
 </Layout>
