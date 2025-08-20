@@ -68,68 +68,151 @@
          <main class="main-content">
             <slot />
          </main>
-         <div class="footer home-one">
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                     <div class="footer-widget first">
-                        <h2>ABOUT US</h2>
-                        <div class="footer-text">
-                           <p>Our mission at Naivaidya is to provide exceptional healthcare in a safe, welcoming space that supports every step of your wellness journey. Beyond treating illness, we inspire healthier living through care, service, and genuine connection earning the trust of our community over the years.</p>
-                           <ul class="social-media">
-                              <li><a href="YOUR_LINKEDIN_URL" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                              <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                              <li><a href="YOUR_FACEBOOK_URL" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                     <div class="footer-widget two">
-                        <h2>DEPARTMENTS</h2>
-                        <div class="footer-text">
-                           <ul>
-                              <li><a href="#"> Psychiatry</a></li>
-                              <li><a href="#">Ophthalmology</a></li>
-                              <li><a href="#">Cardiology </a></li>
-                              <li><a href="#">Immunology </a></li>
-                              <li><a href="#">Hematology </a></li>
-                              <li><a href="#">Gastroenterology </a></li>
-                              <li><a href="#">Orthopedics </a></li>
-                              <li><a href="#">Pulmonary</a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                     <div class="footer-widget two">
-                        <h2>LINKS</h2>
-                        <div class="footer-text">
-                           <ul>
-                              <li><a href="/">Home</a></li>
-                              <li><a href="/aboutus">About Us</a></li>
-                              <li><a href="/faqs">FAQs</a></li>
-                              <li><a href="/contactus">Contact Us </a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                     <div class="footer-widget third">
-                        <h2>Book An Appointment</h2>
-                        <div class="footer-text">
-                           <p>Your health is our priority schedule your visit today for personalized care</p>
-                           <form>
-                              <div class="form-group">
-                                 <!-- <input type="email"  id="email" placeholder="Enter Your Email*" ><br/> -->
-                                 <button class="theme-btn" type="button" onclick="window.location.href='/contactus';">Book Now</button>
-                              </div>
-                           </form>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+         
+         <div class="contact_through">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="contact_through_inner">
+                    <span class="flaticon-phone-1 icon"></span>
+                    <p>Emergency Cases: <br/> 
+                        <a href="tel:+918591420775">+91 8591420775</a>
+                    </p>
+                </div>
             </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="contact_through_inner">
+                    <span class="flaticon-placeholder icon"></span>
+                    <a href="https://www.google.com/maps/search/?api=1&query=2nd+Floor,+Advani+Chambers,+574,+August+Kranti+Rd,+Kemps+Corner,+Malabar+Hill,+Mumbai,+Maharashtra+400026" target="_blank" rel="noopener noreferrer">
+                        <p style="font-size: 15px;">2nd Floor, Advani Chambers, 574, August Kranti Rd, Kemps Corner, Malabar Hill, Mumbai, Maharashtra 400026</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="contact_through_inner">
+                    <span class="flaticon-envelope icon"></span>
+                    <p>Email Address<br/>
+                        <a href="mailto:contact@meditex.com">contact@meditex.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="contact_through_inner">
+                    <span class="flaticon-calendar icon"></span>
+                    <p>Book Online<br/>
+                        <a href="/contactus">Appointment Now</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    .contact_through_inner a {
+        color: inherit; 
+        
+        text-decoration: none; 
+        
+        transition: color 0.3s ease; 
+    }
+
+    .contact_through_inner a:hover {
+        color: #568701; 
+    }
+</style>
+
+         <div class="footer home-one">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                <div class="footer-widget first">
+                    <h2>ABOUT US</h2>
+                    <div class="footer-text">
+                        <p>Our mission at Naivaidya is to provide exceptional healthcare in a safe, welcoming space that supports every step of your wellness journey. Beyond treating illness, we inspire healthier living through care, service, and genuine connection earning the trust of our community over the years.</p>
+                        <ul class="social-media">
+                            <li><a href="YOUR_LINKEDIN_URL" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="YOUR_FACEBOOK_URL" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="footer-widget two">
+                    <h2>LINKS</h2>
+                    <div class="footer-text">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/aboutus">About Us</a></li>
+                            <li><a href="/faqs">FAQs</a></li>
+                            <li><a href="/contactus">Contact Us </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="footer-widget third">
+                    <h2>Book An Appointment</h2>
+                    <div class="footer-text">
+                        <p>Your health is our priority schedule your visit today for personalized care</p>
+                        <form>
+                            <div class="form-group">
+                                <button class="theme-btn" type="button" onclick="window.location.href='/contactus';">Book Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .footer.home-one {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .footer-widget.two ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-widget.two ul li {
+        margin-bottom: 10px; 
+    }
+    .footer-widget.two ul li a {
+        color: #888888; 
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    .footer-widget.two ul li a:hover {
+        color: #568701; 
+    }
+
+    .social-media {
+        list-style: none;
+        padding: 0;
+        margin-top: 15px;
+    }
+    .social-media li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .social-media li a {
+        color: inherit;
+        font-size: 18px; 
+        transition: color 0.3s ease;
+    }
+    .social-media li a:hover {
+        color: #568701;
+    }
+</style>
+
          </div>
          <div class="footer-last home-one">
             <div class="container">
