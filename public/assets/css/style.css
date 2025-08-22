@@ -572,11 +572,11 @@ textarea:focus {
 
 .main-slider .slide {
 	position: relative;
-	padding: 100px 0px 100px;
+	/* padding: 100px 0px 100px; */
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	height: 850px;
+	/* height: 850px; */
 }
 
 .main-slider h1 {
