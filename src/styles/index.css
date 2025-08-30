@@ -1,0 +1,201 @@
+/* === MAIN SLIDER SECTION === */
+.main-slider .slide {
+    display: flex;
+    min-height: 90vh;
+    background: #ffffff;
+    align-items: stretch;
+}
+
+.main-slider .slide .slide-content {
+    flex-basis: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+}
+
+.slide-content .content {
+    max-width: 550px;
+    text-align: left;
+    transform: translate(70px, -70px);
+}
+
+.slide-content .content h1 {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 25px;
+}
+
+.slide-image {
+    flex-basis: 50%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-image .media-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(3.7);
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-image .media-inner video {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.slide-content h1,
+.slide-content .text,
+.slide-content p {
+    color: #2c3e50 !important;
+}
+
+.slide-content .text {
+    margin-bottom: 30px;
+}
+
+.slide-content h1 span {
+    color: #568701 !important;
+}
+
+.theme-btn:not(.btn-dark) {
+    background-color: #568701 !important;
+    color: #ffffff !important;
+    border-color: #17413F !important;
+}
+
+/* === APPOINTMENT SECTION === */
+.work-hours-list {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.work-hours-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid #568701;
+    font-size: 16px;
+}
+
+.work-hours-list li span {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.work-hours-list li:last-child {
+    border-bottom: none;
+}
+
+.appointment_section .container {
+    max-width: 1400px;
+    width: 95%;
+}
+
+.col-lg-half {
+    flex: 0 0 4.1666%;
+    max-width: 4.1666%;
+}
+
+/* === DEPARTMENT SECTION === */
+.department_icon_content {
+    background: #f4f4f9;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.department_icon_content .dep_icon {
+    font-size: 48px;
+    color: #568701;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.department_icon_content h2 {
+    font-size: 1.25rem;
+    color: #333;
+    margin: 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.department_icon_content p {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: #568701;
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    opacity: 0;
+    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.department_icon_content:hover {
+    background-color: #f4f4f9;
+    color: #568701;
+}
+
+.department_icon_content:hover h2,
+.department_icon_content:hover .dep_icon {
+    color: #568701;
+}
+
+.department_icon_content:hover p {
+    top: 0;
+    opacity: 1;
+}
+
+/* === BEST DOCTORS (READ MORE) SECTION === */
+.best-doctor-outer .content-inner p {
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.best-doctor-outer .content-inner.expanded p {
+    max-height: 1000px;
+}
+
+.read-more-btn {
+    color: #333;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 10px;
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.read-more-btn:hover {
+    background-color: #f0f0f0;
+}

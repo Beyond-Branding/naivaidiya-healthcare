@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import '../styles/index.css'; 
 ---
 <Layout>
     
@@ -91,92 +92,7 @@ import Layout from '../layouts/Layout.astro';
   </div>
 </section>
 
-<style>
-  .main-slider .slide {
-    display: flex;
-    min-height: 90vh;
-    background: #ffffff;
-    align-items: stretch;
-  }
-
-  .main-slider .slide .slide-content {
-    flex-basis: 50%;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center !important;
-    align-items: center;
-  }
-
-  .slide-content .content {
-    max-width: 550px;
-    text-align: left;
-    transform: translate(70px, -70px);
-  }
-
-  .slide-content .content h1 {
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 25px;
-  }
-
-  .slide-image {
-    flex-basis: 50%;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-size: cover;
-    background-position: center;
-  }
-
-
-  .slide-image .media-inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(3.7); 
-    width: auto;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .slide-image .media-inner video {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-  }
-
-  .slide-content h1,
-  .slide-content .text,
-  .slide-content p {
-    color: #2c3e50 !important;
-  }
-
-  .slide-content .text {
-    margin-bottom: 30px;
-  }
-
-  .slide-content h1 span {
-    color: #17413F !important;
-  }
-
-  .theme-btn:not(.btn-dark) {
-    background-color: #568701 !important;
-    color: #ffffff !important; 
-    border-color: #17413F !important; 
-}
-
-</style>
-
-
-    <section class="appointment_section hm-one">
+<section class="appointment_section hm-one">
     <div class="container">
         <div class="appointment_inner">
             <div class="row">
@@ -187,71 +103,34 @@ import Layout from '../layouts/Layout.astro';
                         <p>Urgent cases are our top priority and are attended immediately.</p>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-6 col-sm-12">
-  <div class="appont_sec_inner">
-    <h6>WORK HOURS</h6>
-    <div class="row">
-      
-      <!-- Doctor 1 -->
-      <div class="col-12 col-sm-6">
-        <strong style="font-size: 18px;">Dr. Saurabh Jain</strong>
-        <ul class="work-hours-list">
-          <li>Mon - <span>3:00 PM - 6:30 PM</span></li>
-          <li>Tue - <span>3:00 PM - 6:30 PM</span></li>
-          <li>Wed - <span>3:00 PM - 6:30 PM</span></li>
-          <li>Thu - <span>11:00 AM - 1:00 PM</span></li>
-          <li>Fri - <span>3:00 PM - 6:30 PM</span></li>
-        </ul>
-      </div>
-
-      <!-- Doctor 2 -->
-      <div class="col-12 col-sm-6">
-        <strong style="font-size: 18px;">Dr. Zimpu Jain</strong>
-        <ul class="work-hours-list">
-          <li>Mon - <span>12:00 PM - 4:00 PM</span></li>
-          <li>Tue - <span>12:00 PM - 4:00 PM</span></li>
-          <li>Wed - <span>12:00 PM - 4:00 PM</span></li>
-          <li>Thu - <span>10:00 AM - 1:00 PM</span></li>
-          <li>Fri - <span>12:00 PM - 4:00 PM</span></li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<style>
-    .work-hours-list {
-  padding-left: 0;
-  list-style: none;
-  margin: 0;
-}
-
-.work-hours-list li {
-  padding: 6px 0;
-  border-bottom: 1px solid #568701; /* horizontal line */
-  font-size: 16px;
-}
-
-.work-hours-list li span {
-  font-size: 14px;
-  white-space: nowrap;
-}
-
-.work-hours-list li:last-child {
-  border-bottom: none; /* remove line after last item */
-}
-
-.appointment_section .container {
-  max-width: 1400px;  /* increase width (default is ~1140px) */
-  width: 95%;         /* take more space */
-}
-
-
-</style>
-
-<div class="col-lg-half d-none d-lg-block"></div>
+                    <div class="appont_sec_inner">
+                        <h6>WORK HOURS</h6>
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <strong style="font-size: 18px;">Dr. Saurabh Jain</strong>
+                                <ul class="work-hours-list">
+                                    <li>Mon - <span>3:00 PM - 6:30 PM</span></li>
+                                    <li>Tue - <span>3:00 PM - 6:30 PM</span></li>
+                                    <li>Wed - <span>3:00 PM - 6:30 PM</span></li>
+                                    <li>Thu - <span>11:00 AM - 1:00 PM</span></li>
+                                    <li>Fri - <span>3:00 PM - 6:30 PM</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <strong style="font-size: 18px;">Dr. Zimpu Jain</strong>
+                                <ul class="work-hours-list">
+                                    <li>Mon - <span>12:00 PM - 4:00 PM</span></li>
+                                    <li>Tue - <span>12:00 PM - 4:00 PM</span></li>
+                                    <li>Wed - <span>12:00 PM - 4:00 PM</span></li>
+                                    <li>Thu - <span>10:00 AM - 1:00 PM</span></li>
+                                    <li>Fri - <span>12:00 PM - 4:00 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-half d-none d-lg-block"></div>
                 <div class="col-lg-5 col-md-12 col-sm-12">
                     <div class="appont_sec_inner">
                         <h6>BOOK YOUR WELLNESS SLOT</h6>
@@ -289,81 +168,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
 </section>
 
-<style>
-.col-lg-half {
-  flex: 0 0 4.1666%;   
-  max-width: 4.1666%;
-}
-
-.department_icon_content {
-    background: #f4f4f9; 
-    padding: 2rem 1rem;
-    text-align: center;
-    border-radius: 8px; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
-    min-height: 200px; 
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    position: relative; 
-    overflow: hidden; 
-}
-
-.department_icon_content .dep_icon {
-    font-size: 48px; 
-    color: #568701; 
-    margin-bottom: 1rem;
-    transition: color 0.3s ease-in-out;
-}
-
-.department_icon_content h2 {
-    font-size: 1.25rem;
-    color: #333; 
-    margin: 0;
-    transition: color 0.3s ease-in-out;
-}
-
-.department_icon_content p {
-    position: absolute;
-    top: 100%; 
-    left: 0;
-    width: 100%;
-    padding: 1rem;
-    background-color: #568701; 
-    color: white;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    opacity: 0; 
-    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    box-sizing: border-box; 
-}
-
-.department_icon_content:hover {
-    background-color: #f4f4f9; 
-    color: #568701; 
-}
-
-.department_icon_content:hover h2,
-.department_icon_content:hover .dep_icon {
-    color: #568701;
-}
-
-.department_icon_content:hover p {
-    top: 0; 
-    opacity: 1; 
-}
-
-
-
-    </style>   
-
-
-    <!-------department-section----->
-    <section class="department_section hm-one">
+<section class="department_section hm-one">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -376,101 +181,73 @@ import Layout from '../layouts/Layout.astro';
             <div class="row">
                 <div class="col-lg-13">
                     <div class="department_icon_content">
-                        <span class="flaticon-doctor-1 dep_icon"></span></a>
-                        
-                            <h2>Consultation</h2>
-                        </a>
+                        <span class="flaticon-doctor-1 dep_icon"></span>
+                        <h2>Consultation</h2>
                         <p>A one-on-one session with our experienced medical professionals to understand your health concerns, guide diagnosis, and plan personalized treatment.</p>
                     </div>
                     <div class="department_icon_content">
-                        <span class="flaticon-lab dep_icon"></span></a>
-                        
-                            <h2>Pathology</h2>
-                        </a>
+                        <span class="flaticon-lab dep_icon"></span>
+                        <h2>Pathology</h2>
                         <p>Essential laboratory testing of blood, urine, and tissues that helps detect, monitor, and prevent a wide range of medical conditions.</p>
                     </div>
                     <div class="department_icon_content">
-                        <span class="flaticon-bones dep_icon"></span></a>
-                        
-                            <h2>Digital X- ray</h2>
-                        </a>
+                        <span class="flaticon-bones dep_icon"></span>
+                        <h2>Digital X- ray</h2>
                         <p>Advanced imaging that provides fast, detailed internal views to help diagnose injuries, infections, and other health issues with accuracy.</p>
                     </div>
                     <div class="department_icon_content">
-                        <span class="flaticon-heart-2 dep_icon"></span></a>
-                        
-                            <h2>ECG (Electrocardiogram)</h2>
-                        </a>
+                        <span class="flaticon-heart-2 dep_icon"></span>
+                        <h2>ECG (Electrocardiogram)</h2>
                         <p>A safe, quick test that records the heart's electrical activity to detect abnormalities in rhythm, rate, or structure.</p>
                     </div>
                     <div class="department_icon_content">
-                        <span class="flaticon-heart dep_icon"></span></a>
-                        
-                            <h2>2D Echocardiography</h2>
-                        </a>
+                        <span class="flaticon-heart dep_icon"></span>
+                        <h2>2D Echocardiography</h2>
                         <p>An ultrasound-based scan that gives real-time visuals of the heart's chambers, valves, and movement to evaluate cardiac health.</p>
                     </div>
                     <div class="department_icon_content">
-                        <span class="flaticon-heart-1 dep_icon"></span></a>
-                        
-                            <h2>Treadmill / Stress Test</h2>
-                        </a>
+                        <span class="flaticon-heart-1 dep_icon"></span>
+                        <h2>Treadmill / Stress Test</h2>
                         <p>A heart performance test conducted during physical activity to assess how well your heart functions under stress.</p>
                     </div>
                     <div class="department_icon_content">
-                        <span class="flaticon-stomach dep_icon"></span></a>
-                        
-                            <h2>Sonography & Doppler</h2>
-                        </a>
+                        <span class="flaticon-stomach dep_icon"></span>
+                        <h2>Sonography & Doppler</h2>
                         <p>Ultrasound imaging used to observe internal organs, monitor pregnancies, and assess blood flow without the use of radiation.</p>
                     </div>
                     <div class="department_icon_content">
-                        <span class="flaticon-lung dep_icon"></span></a>
-                        
-                            <h2 style="font-size: 18px;">Pulmonary Function Test (PFT)</h2>
-                        </a>
+                        <span class="flaticon-lung dep_icon"></span>
+                        <h2 style="font-size: 18px;">Pulmonary Function Test (PFT)</h2>
                         <p>Breathing assessments that measure lung capacity and airflow to help diagnose and manage respiratory conditions like asthma or COPD.</p>
                     </div>
                     <div class="department_icon_content">
-                        <span class="flaticon-time dep_icon"></span></a>
-                        
-                            <h2>Day Care Services</h2>
-                        </a>
+                        <span class="flaticon-time dep_icon"></span>
+                        <h2>Day Care Services</h2>
                         <p>Medical treatments and minor procedures performed within the day, eliminating the need for overnight hospitalization.</p>
                     </div>
                     <div class="department_icon_content">
-                        <span class="flaticon-drug dep_icon"></span></a>
-                        
-                            <h2>IV Infusion Therapy</h2>
-                        </a>
+                        <span class="flaticon-drug dep_icon"></span>
+                        <h2>IV Infusion Therapy</h2>
                         <p>Direct administration of fluids or medications into the bloodstream for quicker recovery and improved treatment effectiveness.</p>
                     </div>
                     <div class="department_icon_content">
-                        <span class="flaticon-test dep_icon"></span></a>
-                        
-                            <h2>Vaccinations</h2>
-                        </a>
+                        <span class="flaticon-test dep_icon"></span>
+                        <h2>Vaccinations</h2>
                         <p>Protective immunizations that guard against harmful diseases and strengthen long-term immunity for all age groups.</p>
                     </div>
                     <div class="department_icon_content">
-                        <span class="flaticon-automation dep_icon"></span></a>
-                        
-                            <h2>Drugless Therapies</h2>
-                        </a>
+                        <span class="flaticon-automation dep_icon"></span>
+                        <h2>Drugless Therapies</h2>
                         <p>Natural, non-pharmaceutical healing methods such as yoga, physiotherapy, and lifestyle modifications to support holistic well-being.</p>
                     </div>
                     <div class="department_icon_content">
-                        <span class="flaticon-physiotherapy dep_icon"></span></a>
-                        
-                            <h2>Physiotherapy</h2>
-                        </a>
+                        <span class="flaticon-physiotherapy dep_icon"></span>
+                        <h2>Physiotherapy</h2>
                         <p>Therapeutic movement and exercise techniques that aid in recovery, reduce pain, and improve strength and mobility.</p>
                     </div>
                     <div class="department_icon_content">
-                        <span class="flaticon-stomach dep_icon"></span></a>
-                        
-                            <h2>Diet & Nutrition</h2>
-                        </a>
+                        <span class="flaticon-stomach dep_icon"></span>
+                        <h2>Diet & Nutrition</h2>
                         <p>Customized diet planning that supports overall health, disease management, and recovery through balanced and mindful eating.</p>
                     </div>
                 </div>
@@ -478,112 +255,75 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </div>
 </section>
-    <!-------/department-section----->
 
-<!--------best-doctors-------->
-    <section class="best-doctors hme-one">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="heading">
-                        <h1>HEALING HANDS, <span> CARING HEARTS</span></h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="owl-carousel owl-theme three-item">
-                        <div class="best-doctor-outer">
-                            <div class="image">
-                                <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755411138/WhatsApp_Image_2025-07-24_at_15.23.16_1_1_k05xnz.png" class="img-fluid" alt="best-doctors" />
-                                <a href="#" class="link"></a>
-                            </div>
-                            <div class="content-inner">
-                                <h2> Dr. Saurabh Jain </a> </h2>
-                                <span>Consultant Physician | MBBS, DNB (Medicine), PG Diabetology (Boston), PGD Endocrinology (RCP, UK)</span>
-                                <p>With over 15 years of experience, Dr. Saurabh Jain specializes in internal medicine, diabetes, hypertension, and cardiac care. He consults at Naivaidya Healthcare and is affiliated with Sir HN Reliance Foundation, Jaslok, and Cumballa Hill Hospital.
-                                    <br>A former physician with the Indian Air Force and Railways, he holds advanced certifications from Boston University and RCP, UK. He is an active member of IMA, API, ASE, and the Jain Doctors Association, and regularly contributes to medical conferences and research.</p>
-                                
-                            </div>
-                        </div>
-                        <div class="best-doctor-outer">
-                            <div class="image">
-                                <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755411288/WhatsApp_Image_2025-07-24_at_15.23.17_1_1_odgqty.png" class="img-fluid" alt="best-doctors" />
-                                <a href="#" class="link"></a>
-                            </div>
-                            <div class="content-inner">
-                                <h2> Dr. Zimpu Mehta Jain </a> </h2>
-                                <span>Consulting Obstetrician & Gynaecologist Laparoscopic Surgeon and Infertility Specialist MBBS ,DGO, FCPS, DNB</span>
-                                <p>Dr Zimpu is a Compassionate gynecologist with 15 + years of experience in providing comprehensive women's health services, specializing in minimally invasive gynecological surgeries and high-risk pregnancies. She has proven ability to build strong patient relationships and deliver positive health outcomes.
-                                    <br>She has completed her MBBS from K.J. Somaiya Medical College, followed by her Post graduate studies from Seth G.S. Medical College & K.E.M. Hospital, Mumbai. She has undergone specialized laparoscopic training under Dr. Hafeez Rehman at Sunrise Hospital, Kochi, and has worked in the Department of Oncology- Gynaecology at Tata Memorial Hospital. 
-                                    Dr. Jain is a life member of FOGSI, IAGE, and the Jain Doctors Federation and has received many awards and recognition for her outstanding performance and contribution to the field.</p>
-                                
-                            </div>
-                        </div>
-                        <div class="best-doctor-outer">
-                            <div class="image">
-                                <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755411772/WhatsApp_Image_2025-07-24_at_15.20.54_2_1_pc2p4r.png" class="img-fluid" alt="best-doctors" />
-                                <a href="#" class="link"></a>
-                            </div>
-                            <div class="content-inner">
-                                <h2> Dr. Jignesh Mepani</a></h2>
-                                <span>Bachelor of Physiotherapy | Certified Mulligan Practitioner </span>
-                                <p>With over 18 years of experience, I specialize in helping individuals restore movement, manage pain, and regain function. I'm a Certified Mulligan Practitioner, trained in gentle, pain-free manual therapy techniques that support effective recovery. 
-                                    <br>My 8-year tenure at Breach Candy Hospital across ICUs, wards, and OPDs shaped my patient-focused, result-driven approach. I'm committed to providing precise care that helps you move better, heal faster, and live pain-free.</p>
-                                
-                            </div>
-                        </div>
-                        <div class="best-doctor-outer">
-                            <div class="image">
-                                <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755412004/image_7_tmlmzy.png" class="img-fluid" alt="best-doctors" />
-                                <a href="#" class="link"></a>
-                            </div>
-                            <div class="content-inner">
-                                <h2> Dr. Pulkit Popat</a></h2>
-                                <span>Occupational Therapist | Neuro & Musculoskeletal Rehabilitation Specialist</span>
-                                <p>I'm a licensed Occupational Therapist with a degree from Seth G.S. Medical College & KEM Hospital, Mumbai, and over four years of experience in neuro and musculoskeletal rehabilitation. I specialize in stroke recovery, spinal cord injuries, orthopedic conditions, and chronic pain.
-                                    <br>With a patient-focused, evidence-based approach, I design personalized rehab plans that restore independence, improve function, and enhance quality of life.</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
+<section class="best-doctors hme-one">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading">
+                    <h1>HEALING HANDS, <span> CARING HEARTS</span></h1>
                 </div>
             </div>
         </div>
-    </section>
-    
-    <script is:inline>
-  function equalizeBoxHeights() {
-    const contentBoxes = document.querySelectorAll('.three-item .content-inner');
-    if (contentBoxes.length === 0) return;
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="owl-carousel owl-theme three-item">
+                    <div class="best-doctor-outer">
+                        <div class="image">
+                            <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755411138/WhatsApp_Image_2025-07-24_at_15.23.16_1_1_k05xnz.png" class="img-fluid" alt="best-doctors" />
+                            <a href="#" class="link"></a>
+                        </div>
+                        <div class="content-inner">
+                            <h2> Dr. Saurabh Jain </a> </h2>
+                            <span>Consultant Physician | MBBS, DNB (Medicine), PG Diabetology (Boston), PGD Endocrinology (RCP, UK)</span>
+                            <p>With over 15 years of experience, Dr. Saurabh Jain specializes in internal medicine, diabetes, hypertension, and cardiac care. He consults at Naivaidya Healthcare and is affiliated with Sir HN Reliance Foundation, Jaslok, and Cumballa Hill Hospital.
+                                <br>A former physician with the Indian Air Force and Railways, he holds advanced certifications from Boston University and RCP, UK. He is an active member of IMA, API, ASE, and the Jain Doctors Association, and regularly contributes to medical conferences and research.</p>
+                        </div>
+                    </div>
+                    <div class="best-doctor-outer">
+                        <div class="image">
+                            <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755411288/WhatsApp_Image_2025-07-24_at_15.23.17_1_1_odgqty.png" class="img-fluid" alt="best-doctors" />
+                            <a href="#" class="link"></a>
+                        </div>
+                        <div class="content-inner">
+                            <h2> Dr. Zimpu Mehta Jain </a> </h2>
+                            <span>Consulting Obstetrician & Gynaecologist Laparoscopic Surgeon and Infertility Specialist MBBS ,DGO, FCPS, DNB</span>
+                            <p>Dr Zimpu is a Compassionate gynecologist with 15 + years of experience in providing comprehensive women's health services, specializing in minimally invasive gynecological surgeries and high-risk pregnancies. She has proven ability to build strong patient relationships and deliver positive health outcomes.
+                                <br>She has completed her MBBS from K.J. Somaiya Medical College, followed by her Post graduate studies from Seth G.S. Medical College & K.E.M. Hospital, Mumbai. She has undergone specialized laparoscopic training under Dr. Hafeez Rehman at Sunrise Hospital, Kochi, and has worked in the Department of Oncology- Gynaecology at Tata Memorial Hospital. 
+                                Dr. Jain is a life member of FOGSI, IAGE, and the Jain Doctors Federation and has received many awards and recognition for her outstanding performance and contribution to the field.</p>
+                        </div>
+                    </div>
+                    <div class="best-doctor-outer">
+                        <div class="image">
+                            <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755411772/WhatsApp_Image_2025-07-24_at_15.20.54_2_1_pc2p4r.png" class="img-fluid" alt="best-doctors" />
+                            <a href="#" class="link"></a>
+                        </div>
+                        <div class="content-inner">
+                            <h2> Dr. Jignesh Mepani</a></h2>
+                            <span>Bachelor of Physiotherapy | <br> Certified Mulligan <br> Practitioner </span>
+                            <p>With over 18 years of experience, I specialize in helping individuals restore movement, manage pain, and regain function. I'm a Certified Mulligan Practitioner, trained in gentle, pain-free manual therapy techniques that support effective recovery. 
+                                <br>My 8-year tenure at Breach Candy Hospital across ICUs, wards, and OPDs shaped my patient-focused, result-driven approach. I'm committed to providing precise care that helps you move better, heal faster, and live pain-free.</p>
+                        </div>
+                    </div>
+                    <div class="best-doctor-outer">
+                        <div class="image">
+                            <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755412004/image_7_tmlmzy.png" class="img-fluid" alt="best-doctors" />
+                            <a href="#" class="link"></a>
+                        </div>
+                        <div class="content-inner">
+                            <h2> Dr. Pulkit Popat</a></h2>
+                            <span>Occupational Therapist | Neuro & Musculoskeletal Rehabilitation <br> Specialist</span>
+                            <p>I'm a licensed Occupational Therapist with a degree from Seth G.S. Medical College & KEM Hospital, Mumbai, and over four years of experience in neuro and musculoskeletal rehabilitation. I specialize in stroke recovery, spinal cord injuries, orthopedic conditions, and chronic pain.
+                                <br>With a patient-focused, evidence-based approach, I design personalized rehab plans that restore independence, improve function, and enhance quality of life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    contentBoxes.forEach(box => {
-      box.style.height = 'auto';
-    });
-
-    let maxHeight = 0;
-    contentBoxes.forEach(box => {
-      if (box.offsetHeight > maxHeight) {
-        maxHeight = box.offsetHeight;
-      }
-    });
-
-    contentBoxes.forEach(box => {
-      box.style.height = `${maxHeight}px`;
-    });
-  }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(equalizeBoxHeights, 500);
-  });
-
-  window.addEventListener('resize', equalizeBoxHeights);
-</script>
-    <!--------/best-doctors-------->
-
-
-    <section class="testimonial_sec hm-one">
+<section class="testimonial_sec hm-one">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -606,7 +346,7 @@ import Layout from '../layouts/Layout.astro';
             <div class="testimonial_content">
                 <p>"Dr. Saurabh Jain at Shreenathji Polyclinic provided excellent treatment. He was very knowledgeable and attentive, and his expertise helped me recover quickly. I highly recommend him for anyone seeking top-notch care."</p>
                 <div class="client_details">
-                     <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=J&font=montserrat" class="img-fluid rounded-circle" alt="test" />
+                    <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=J&font=montserrat" class="img-fluid rounded-circle" alt="test" />
                     <div class="client_in">
                         <h6>Joshna</h6>
                         <span>Patient</span>
@@ -616,7 +356,7 @@ import Layout from '../layouts/Layout.astro';
             <div class="testimonial_content">
                 <p>"One of the best doctors I have talked to. Amazing communication and very polite."</p>
                 <div class="client_details">
-                     <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=H&font=montserrat" class="img-fluid rounded-circle" alt="test" />
+                    <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=H&font=montserrat" class="img-fluid rounded-circle" alt="test" />
                     <div class="client_in">
                         <h6>Hardik Sampat</h6>
                         <span>Patient</span>
@@ -626,7 +366,7 @@ import Layout from '../layouts/Layout.astro';
             <div class="testimonial_content">
                 <p>"One of the best doctor for sure...I feel so blessed to know you and have you as my doctor...."</p>
                 <div class="client_details">
-                     <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=S&font=montserrat" class="img-fluid rounded-circle" alt="test" />
+                    <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=S&font=montserrat" class="img-fluid rounded-circle" alt="test" />
                     <div class="client_in">
                         <h6>Sumaiya Khan</h6>
                         <span>Patient</span>
@@ -636,7 +376,7 @@ import Layout from '../layouts/Layout.astro';
             <div class="testimonial_content">
                 <p>"Wonderful experience! It was my first interaction and was very polite in answering the quries."</p>
                 <div class="client_details">
-                     <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=A&font=montserrat" class="img-fluid rounded-circle" alt="test" />
+                    <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=A&font=montserrat" class="img-fluid rounded-circle" alt="test" />
                     <div class="client_in">
                         <h6>Aradhi Keshav</h6>
                         <span>Patient</span>
@@ -646,7 +386,7 @@ import Layout from '../layouts/Layout.astro';
             <div class="testimonial_content">
                 <p>"Good dignosis and very helpful in medical cosultation."</p>
                 <div class="client_details">
-                     <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=G&font=montserrat" class="img-fluid rounded-circle" alt="test" />
+                    <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=G&font=montserrat" class="img-fluid rounded-circle" alt="test" />
                     <div class="client_in">
                         <h6>Gaurav Bhujbal</h6>
                         <span>Patient</span>
@@ -654,13 +394,9 @@ import Layout from '../layouts/Layout.astro';
                 </div>
             </div>
         </div>
-
     </div>
 </section>
 
-
-    
-
-    
-
 </Layout>
+
+<script src="../scripts/main.js"></script>
