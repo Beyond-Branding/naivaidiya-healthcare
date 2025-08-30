@@ -164,8 +164,14 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .slide-content h1 span {
-    color: #568701 !important;
+    color: #17413F !important;
   }
+
+  .theme-btn:not(.btn-dark) {
+    background-color: #568701 !important;
+    color: #ffffff !important; 
+    border-color: #17413F !important; 
+}
 
 </style>
 
@@ -183,32 +189,67 @@ import Layout from '../layouts/Layout.astro';
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-12">
-    <div class="appont_sec_inner">
-        <h6>WORK HOURS</h6>
-        <div class="row" >
-            <div class="col-12 col-sm-6">
-                <strong style="font-size: 18px;">Dr. Saurabh Jain</strong>
-                <ul style="padding-left: 0; list-style: none;">
-                    <li>Mon...<span style="font-size: 14px; white-space: nowrap;">3:00 PM - 6:30 PM</span></li>
-                    <li>Tue...<span style="font-size: 14px; white-space: nowrap;">3:00 PM - 6:30 PM</span></li>
-                    <li>Wed...<span style="font-size: 14px; white-space: nowrap;">3:00 PM - 6:30 PM</span></li>
-                    <li>Thu...<span style="font-size: 14px; white-space: nowrap;">11:00 AM - 1:00 PM</span></li>
-                    <li>Fri...<span style="font-size: 14px; white-space: nowrap;">3:00 PM - 6:30 PM</span></li>
-                </ul>
-            </div>
-            <div class="col-12 col-sm-6" style="gap: 20px;">
-                <strong style="font-size: 18px;">Dr. Zimpu Jain</strong>
-                <ul style="padding-left: 0; list-style: none;">
-                    <li>Mon...<span style="font-size: 14px; white-space: nowrap;">12:00 PM - 4:00 PM</span></li>
-                    <li>Tue...<span style="font-size: 14px; white-space: nowrap;">12:00 PM - 4:00 PM</span></li>
-                    <li>Wed...<span style="font-size: 14px; white-space: nowrap;">12:00 PM - 4:00 PM</span></li>
-                    <li>Thu...<span style="font-size: 14px; white-space: nowrap;">10:00 AM - 1:00 PM</span></li>
-                    <li>Fri...<span style="font-size: 14px; white-space: nowrap;">12:00 PM - 4:00 PM</span></li>
-                </ul>
-            </div>
-        </div>
+  <div class="appont_sec_inner">
+    <h6>WORK HOURS</h6>
+    <div class="row">
+      
+      <!-- Doctor 1 -->
+      <div class="col-12 col-sm-6">
+        <strong style="font-size: 18px;">Dr. Saurabh Jain</strong>
+        <ul class="work-hours-list">
+          <li>Mon - <span>3:00 PM - 6:30 PM</span></li>
+          <li>Tue - <span>3:00 PM - 6:30 PM</span></li>
+          <li>Wed - <span>3:00 PM - 6:30 PM</span></li>
+          <li>Thu - <span>11:00 AM - 1:00 PM</span></li>
+          <li>Fri - <span>3:00 PM - 6:30 PM</span></li>
+        </ul>
+      </div>
+
+      <!-- Doctor 2 -->
+      <div class="col-12 col-sm-6">
+        <strong style="font-size: 18px;">Dr. Zimpu Jain</strong>
+        <ul class="work-hours-list">
+          <li>Mon - <span>12:00 PM - 4:00 PM</span></li>
+          <li>Tue - <span>12:00 PM - 4:00 PM</span></li>
+          <li>Wed - <span>12:00 PM - 4:00 PM</span></li>
+          <li>Thu - <span>10:00 AM - 1:00 PM</span></li>
+          <li>Fri - <span>12:00 PM - 4:00 PM</span></li>
+        </ul>
+      </div>
+
     </div>
+  </div>
 </div>
+
+<style>
+    .work-hours-list {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.work-hours-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid #568701; /* horizontal line */
+  font-size: 16px;
+}
+
+.work-hours-list li span {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.work-hours-list li:last-child {
+  border-bottom: none; /* remove line after last item */
+}
+
+.appointment_section .container {
+  max-width: 1400px;  /* increase width (default is ~1140px) */
+  width: 95%;         /* take more space */
+}
+
+
+</style>
 
 <div class="col-lg-half d-none d-lg-block"></div>
                 <div class="col-lg-5 col-md-12 col-sm-12">
@@ -391,7 +432,7 @@ import Layout from '../layouts/Layout.astro';
                         <p>Breathing assessments that measure lung capacity and airflow to help diagnose and manage respiratory conditions like asthma or COPD.</p>
                     </div>
                     <div class="department_icon_content">
-                        <span class="flaticon-plus dep_icon"></span></a>
+                        <span class="flaticon-time dep_icon"></span></a>
                         
                             <h2>Day Care Services</h2>
                         </a>
@@ -412,7 +453,7 @@ import Layout from '../layouts/Layout.astro';
                         <p>Protective immunizations that guard against harmful diseases and strengthen long-term immunity for all age groups.</p>
                     </div>
                     <div class="department_icon_content">
-                        <span class="flaticon-star dep_icon"></span></a>
+                        <span class="flaticon-automation dep_icon"></span></a>
                         
                             <h2>Drugless Therapies</h2>
                         </a>
@@ -426,7 +467,7 @@ import Layout from '../layouts/Layout.astro';
                         <p>Therapeutic movement and exercise techniques that aid in recovery, reduce pain, and improve strength and mobility.</p>
                     </div>
                     <div class="department_icon_content">
-                        <span class="flaticon-correct dep_icon"></span></a>
+                        <span class="flaticon-stomach dep_icon"></span></a>
                         
                             <h2>Diet & Nutrition</h2>
                         </a>
@@ -439,84 +480,7 @@ import Layout from '../layouts/Layout.astro';
 </section>
     <!-------/department-section----->
 
-
-    <section class="testimonial_sec hm-one">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="heading clearfix">
-                    <h1>STORIES  <span>OF HEALING</span></h1>
-                </div>
-            </div>
-        </div>
-        <div class="owl-carousel owl-theme two-item">
-            <div class="testimonial_content">
-                <p>"Dr Saurabh Jain is one of the best doctors I have ever known. Been with him for about 7 years and he is so good. Undoubtedly the best in the area. He is a cardiologist and is always there for you no matter what. We moved from that area but we still consult him over the phone. I will always vouch for him from anywhere. Great bed side manners and amazing consultation each time we visit. So much love and respect !!."</p>
-                <div class="client_details">
-                    <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=G&font=montserrat" class="img-fluid rounded-circle" alt="test" />
-                    <div class="client_in">
-                        <h6>Golden Aster</h6>
-                        <span>Patient</span>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial_content">
-                <p>"Dr. Saurabh Jain at Shreenathji Polyclinic provided excellent treatment. He was very knowledgeable and attentive, and his expertise helped me recover quickly. I highly recommend him for anyone seeking top-notch care."</p>
-                <div class="client_details">
-                     <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=J&font=montserrat" class="img-fluid rounded-circle" alt="test" />
-                    <div class="client_in">
-                        <h6>Joshna</h6>
-                        <span>Patient</span>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial_content">
-                <p>"One of the best doctors I have talked to. Amazing communication and very polite."</p>
-                <div class="client_details">
-                     <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=H&font=montserrat" class="img-fluid rounded-circle" alt="test" />
-                    <div class="client_in">
-                        <h6>Hardik Sampat</h6>
-                        <span>Patient</span>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial_content">
-                <p>"One of the best doctor for sure...I feel so blessed to know you and have you as my doctor...."</p>
-                <div class="client_details">
-                     <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=S&font=montserrat" class="img-fluid rounded-circle" alt="test" />
-                    <div class="client_in">
-                        <h6>Sumaiya Khan</h6>
-                        <span>Patient</span>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial_content">
-                <p>"Wonderful experience! It was my first interaction and was very polite in answering the quries."</p>
-                <div class="client_details">
-                     <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=A&font=montserrat" class="img-fluid rounded-circle" alt="test" />
-                    <div class="client_in">
-                        <h6>Aradhi Keshav</h6>
-                        <span>Patient</span>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial_content">
-                <p>"Good dignosis and very helpful in medical cosultation."</p>
-                <div class="client_details">
-                     <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=G&font=montserrat" class="img-fluid rounded-circle" alt="test" />
-                    <div class="client_in">
-                        <h6>Gaurav Bhujbal</h6>
-                        <span>Patient</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-    <!--------best-doctors-------->
+<!--------best-doctors-------->
     <section class="best-doctors hme-one">
         <div class="container">
             <div class="row">
@@ -617,6 +581,85 @@ import Layout from '../layouts/Layout.astro';
   window.addEventListener('resize', equalizeBoxHeights);
 </script>
     <!--------/best-doctors-------->
+
+
+    <section class="testimonial_sec hm-one">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading clearfix">
+                    <h1>STORIES  <span>OF HEALING</span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel owl-theme two-item">
+            <div class="testimonial_content">
+                <p>"Dr Saurabh Jain is one of the best doctors I have ever known. Been with him for about 7 years and he is so good. Undoubtedly the best in the area. He is a cardiologist and is always there for you no matter what. We moved from that area but we still consult him over the phone. I will always vouch for him from anywhere. Great bed side manners and amazing consultation each time we visit. So much love and respect !!."</p>
+                <div class="client_details">
+                    <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=G&font=montserrat" class="img-fluid rounded-circle" alt="test" />
+                    <div class="client_in">
+                        <h6>Golden Aster</h6>
+                        <span>Patient</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial_content">
+                <p>"Dr. Saurabh Jain at Shreenathji Polyclinic provided excellent treatment. He was very knowledgeable and attentive, and his expertise helped me recover quickly. I highly recommend him for anyone seeking top-notch care."</p>
+                <div class="client_details">
+                     <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=J&font=montserrat" class="img-fluid rounded-circle" alt="test" />
+                    <div class="client_in">
+                        <h6>Joshna</h6>
+                        <span>Patient</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial_content">
+                <p>"One of the best doctors I have talked to. Amazing communication and very polite."</p>
+                <div class="client_details">
+                     <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=H&font=montserrat" class="img-fluid rounded-circle" alt="test" />
+                    <div class="client_in">
+                        <h6>Hardik Sampat</h6>
+                        <span>Patient</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial_content">
+                <p>"One of the best doctor for sure...I feel so blessed to know you and have you as my doctor...."</p>
+                <div class="client_details">
+                     <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=S&font=montserrat" class="img-fluid rounded-circle" alt="test" />
+                    <div class="client_in">
+                        <h6>Sumaiya Khan</h6>
+                        <span>Patient</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial_content">
+                <p>"Wonderful experience! It was my first interaction and was very polite in answering the quries."</p>
+                <div class="client_details">
+                     <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=A&font=montserrat" class="img-fluid rounded-circle" alt="test" />
+                    <div class="client_in">
+                        <h6>Aradhi Keshav</h6>
+                        <span>Patient</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial_content">
+                <p>"Good dignosis and very helpful in medical cosultation."</p>
+                <div class="client_details">
+                     <img src="https://placehold.co/60x60/A3D062/FFFFFF/png?text=G&font=montserrat" class="img-fluid rounded-circle" alt="test" />
+                    <div class="client_in">
+                        <h6>Gaurav Bhujbal</h6>
+                        <span>Patient</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    
 
     
 
