@@ -12,7 +12,7 @@
       <meta property="og:image" content="/assets/image/fbimg-210x210.jpg">
       <meta property="og:description" content="Meditex is html 5 Template">
       <meta name="full-screen" content="yes">
-      <meta name="theme-color" content="#568701">
+      <meta name="theme-color" content="#17413F">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
       <title>Naivaidya-HealthCare</title>
@@ -92,7 +92,7 @@
                 <div class="contact_through_inner">
                     <span class="flaticon-envelope icon"></span>
                     <p>Email Address<br/>
-                        <a href="mailto:contact@meditex.com">contact@meditex.com</a>
+                        <a href="mailto:naivaidyahealthcare@gmail.com">naivaidyahealthcare@gmail.com</a>
                     </p>
                 </div>
             </div>
@@ -121,6 +121,54 @@
     .contact_through_inner a:hover {
         color: #568701; 
     }
+
+    /* Sets the background color for the entire navigation bar */
+.bsnav {
+    background-color: #17413F !important;
+}
+
+/* Changes the color of the navigation links (Home, About Us, etc.) to white */
+.bsnav .nav-link {
+    color: white !important;
+}
+
+/* This specifically targets the active link (which is currently green) and makes it white too */
+.bsnav .nav-item.activee .nav-link {
+    color: white !important;
+}
+
+/* (Optional but recommended) Add a subtle effect when hovering over links */
+.bsnav .nav-item:hover .nav-link {
+    color: #cccccc !important; /* A light gray to show interaction */
+}
+
+.site-header > .container {
+    display: none;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #17413F #f0f0f0; /* thumb color & track color */
+}
+
+/* For Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #17413F;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #113231; /* A slightly darker shade on hover */
+}
+
 </style>
 
          <div class="footer home-one">
@@ -140,7 +188,7 @@
                 </div>
             </div>
             
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
                 <div class="footer-widget two">
                     <h2>LINKS</h2>
                     <div class="footer-text">
@@ -154,7 +202,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12">
                 <div class="footer-widget third">
                     <h2>Book An Appointment</h2>
                     <div class="footer-text">
@@ -214,12 +262,13 @@
 </style>
 
          </div>
+         
          <div class="footer-last home-one">
             <div class="container">
                <div class="row clearfix">
                   <div class="col-lg-12">
                      <div class="left">
-                        <p> © 2025 <span>Naivaidya</span> All rights reserved.</p>
+                        <p>&copy; 2025 Website Designed & Developed by <span>Beyond Branding</span></p>
                      </div>
                      <div class="right">
                         <ul>
@@ -232,7 +281,8 @@
                </div>
             </div>
          </div>
-         <a href="#" id="scroll" class="default-bg" style="display: none;"><span></span></a>
+
+         <!-- <a href="#" id="scroll" class="default-bg" style="display: none;"><span></span></a> -->
          </div>
 
       <div class="bsnav-mobile">
@@ -255,5 +305,46 @@
       <script is:inline src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
       <script is:inline src="/assets/js/gmaps.js"></script>
       <script is:inline src="/assets/js/map-script.js"></script>
-      </body>
+
+      <!--WhatsApp Floater -->
+      <a 
+        href="https://wa.me/918591420775?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20Naivaidya%20services." 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="whatsapp-floater"
+      >
+        <img 
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+          alt="WhatsApp" 
+          class="whatsapp-icon"
+        />
+      </a>
+
+      <style>
+        .whatsapp-floater {
+          position: fixed;
+          bottom: 40px;
+          right: 20px;
+          width: 60px;
+          height: 60px;
+          background-color: #25D366;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+          cursor: pointer;
+          z-index: 9999;
+          transition: transform 0.3s ease;
+        }
+        .whatsapp-floater:hover {
+          transform: scale(1.1);
+        }
+        .whatsapp-icon {
+          width: 45px;
+          height: 45px;
+        }
+      </style>
+   </body>
 </html>
+
