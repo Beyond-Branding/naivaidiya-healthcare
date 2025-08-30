@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import '../styles/aboutus.css';
 ---
 <Layout>
 
@@ -12,7 +13,6 @@ import Layout from '../layouts/Layout.astro';
           <h1 class="hero-title">WELCOME TO <span>NAIVAIDYA,</span></h1>
           <h2 class="hero-subtitle">Where Health Feels Like <span>Home.</span></h2>
           
-          <!-- Description with hidden span -->
           <p class="hero-description">
             At Naivaidya, we combine compassionate, personalized care with clinical expertise 
             to help you move better, recover faster, and live pain-free. From physiotherapy, 
@@ -27,7 +27,6 @@ import Layout from '../layouts/Layout.astro';
             </span>
           </p>
 
-          <!-- Button -->
           <div class="hero-buttons">
             <button id="readMoreBtn" class="theme-btn btn-dark">READ MORE</button>
           </div>
@@ -45,187 +44,39 @@ import Layout from '../layouts/Layout.astro';
   </div>
 </section>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const btn = document.getElementById("readMoreBtn");
-    const moreText = document.getElementById("moreText");
-
-    btn.addEventListener("click", () => {
-      if (moreText.style.display === "none") {
-        moreText.style.display = "inline";
-        btn.textContent = "READ LESS";
-      } else {
-        moreText.style.display = "none";
-        btn.textContent = "READ MORE";
-      }
-    });
-  });
-</script>
-
-<style>
-  @keyframes slideUp {
-    from {
-      transform: translateY(50px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-  .hero-image-container {
-    animation: slideUp 0.8s ease-out forwards;
-  }
-
-  .hero-content {
-    max-width: 500px;
-  }
-  .hero-title {
-    font-size: 32px;
-    font-weight: 300;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
-  }
-  .hero-title span,
-  .hero-subtitle span {
-    color: #568701;
-    font-weight: 700;
-  }
-  .hero-subtitle {
-    font-size: 18px;
-    font-weight: 400;
-    color: #555;
-    margin-bottom: 30px;
-  }
-  .hero-description {
-    font-size: 16px;
-    line-height: 1.7;
-    color: #555;
-    margin-bottom: 25px;
-  }
-
-  .hero-buttons {
-    display: flex;
-    gap: 15px;
-  }
-  .theme-btn {
-    display: inline-block;
-    padding: 6px 24px;
-    border-radius: 0;
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: all 0.3s ease;
-  }
-  .btn-dark {
-    background-color: #222222;
-    color: #ffffff;
-    border-color: #222222;
-  }
-  .btn-dark:hover {
-    background-color: #000;
-  }
-
-  .hero-image-container {
-    padding: 20px;
-    background-color: #f7f7f7;
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-  }
-  .hero-image {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    display: block;
-  }
-
-  @media (max-width: 991px) {
-    .hero-image-container {
-      margin-bottom: 50px; 
-    }
-    .hero-content {
-      text-align: center;
-      margin: 0 auto;
-    }
-    .hero-buttons {
-      justify-content: center;
-    }
-  }
-</style>
-
-    <!-- <section class="welcome_section hme-one" style="background:url(https://res.cloudinary.com/daoju0r3c/image/upload/v1755376617/Group_3_uxxcl9.png)">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="welcme_inner">
-                        <div class="heading clearfix">
-                            <h1>WELCOME TO <span>NAIVAIDYA</span><br>Where Health Feels Like<span> Home</span></h1>
-                        </div>
-                        <h6>At Naivaidya, we combine compassionate, personalized care <br>with clinical expertise to help you move better, recover faster,<br> and live pain-free. From physiotherapy and women's health<br> to geriatric support, our treatments are designed to restore<br> mobility and improve quality of life.</h6> 
-                        
-                        <a href="/contactus" class="theme-btn">GET IN TOUCH</a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
-    <div class="department_listing">
-        <div class="container">
-           <div class="row">
-    <div class="col-lg-12">
-        <div class="department_list_inner">
+<div class="department_listing">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="department_list_inner">
             <div class="image">
-                <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755686377/image_11_2_g81seb.png" class="img-fluid" alt="Dr. Saurabh Jain" />
+              <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755686377/image_11_2_g81seb.png" class="img-fluid" alt="Dr. Saurabh Jain" />
             </div>
             <div class="li_dp_content">
-                <h2>Dr. Saurabh Jain</h2>
-                <h4>Consultant Physician | MBBS, DNB (Medicine), PG Diabetology (Boston), PGD Endocrinology (RCP, UK)</h4>
-                <p style="font-size: 13px;">With over 15 years of experience, Dr. Saurabh Jain specializes in Internal Medicine, with special interest in Diabetes and Cardiac care. He consults at Naivaidya Healthcare and is affiliated with Breach Candy, Sir HN Reliance Foundation, Jaslok, and Cumballa Hill Hospital. A former physician with the Indian Air Force and Railways, he holds advanced certifications from Boston University and RCP, UK. He is an active member of IMA, API, ASE, and the Jain Doctors Association, and regularly contributes to medical conferences and research.</p>
+              <h2>Dr. Saurabh Jain</h2>
+              <h4>Consultant Physician | MBBS, DNB (Medicine), PG Diabetology (Boston), PGD Endocrinology (RCP, UK)</h4>
+              <p style="font-size: 13px;">With over 15 years of experience, Dr. Saurabh Jain specializes in Internal Medicine, with special interest in Diabetes and Cardiac care. He consults at Naivaidya Healthcare and is affiliated with Breach Candy, Sir HN Reliance Foundation, Jaslok, and Cumballa Hill Hospital. A former physician with the Indian Air Force and Railways, he holds advanced certifications from Boston University and RCP, UK. He is an active member of IMA, API, ASE, and the Jain Doctors Association, and regularly contributes to medical conferences and research.</p>
             </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
 
-<style>
-    .li_dp_content h2 {
-        margin-bottom: 2px; 
-        color: #568701;
-    }
-
-    .li_dp_content h4 {
-        font-size: 16px;
-        font-weight: 600;
-        color: #888888; 
-        margin-bottom: 15px; 
-        line-height: 1.5;
-    }
-</style>
-    <div class="row">
-    <div class="col-lg-12">
-        <div class="department_list_inner">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="department_list_inner">
             <div class="image">
-                <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755686621/image_9_1_cwhpzb.png" class="img-fluid" alt="Dr. Saurabh Jain" />
+              <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755686621/image_9_1_cwhpzb.png" class="img-fluid" alt="Dr. Zimpu Mehta Jain" />
             </div>
             <div class="li_dp_content">
-                <h2>Dr. Zimpu Mehta Jain</h2>
-                <h4>Consulting Obstetrician & Gynaecologist | MBBS, DGO, FCPS, DNB</h4>
-                <p style="font-size: 13px;">Dr. Zimpu Mehta Jain is a highly experienced obstetrician and gynaecologist, specializing in infertility management and advanced laparoscopic surgeries. She completed her MBBS from K.J. Somaiya Medical College, followed by DGO, FCPS, and DNB from Seth G.S. Medical College & K.E.M. Hospital, Mumbai. She has undergone specialized laparoscopic training under Dr. Hafeez Rehman at Sunrise Hospital, Kochi, and has worked in the Department of Gynaecology at Tata Memorial Hospital. Dr. Jain is a life member of FOGSI, IAGE, and the Jain Doctors Association.</p>
+              <h2>Dr. Zimpu Mehta Jain</h2>
+              <h4>Consulting Obstetrician & Gynaecologist | MBBS, DGO, FCPS, DNB</h4>
+              <p style="font-size: 13px;">Dr. Zimpu Mehta Jain is a highly experienced obstetrician and gynaecologist, specializing in infertility management and advanced laparoscopic surgeries. She completed her MBBS from K.J. Somaiya Medical College, followed by DGO, FCPS, and DNB from Seth G.S. Medical College & K.E.M. Hospital, Mumbai. She has undergone specialized laparoscopic training under Dr. Hafeez Rehman at Sunrise Hospital, Kochi, and has worked in the Department of Gynaecology at Tata Memorial Hospital. Dr. Jain is a life member of FOGSI, IAGE, and the Jain Doctors Association.</p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 </div>
-        </div>
-     </div>
-
-
+<script src="../scripts/aboutus.js"></script>
 
 </Layout>
