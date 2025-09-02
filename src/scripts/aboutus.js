@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const btn = document.getElementById("readMoreBtn");
   const moreText = document.getElementById("moreText");
 
-  // Exit if the button doesn't exist on the page
   if (!btn || !moreText) {
     return;
   }
