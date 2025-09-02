@@ -51,24 +51,29 @@
   display: flex;
   gap: 15px;
 }
+
 .theme-btn {
   display: inline-block;
-  padding: 6px 24px;
-  border-radius: 0;
-  font-weight: 700;
-  font-size: 14px;
+  padding: 4px 16px;        
+  border-radius: 4px;      
+  font-weight: 600;
+  font-size: 13px;          
   text-transform: uppercase;
   cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.3s ease;
 }
+
 .btn-dark {
-  background-color: #222222;
+  background-color: #568701;  
   color: #ffffff;
-  border-color: #222222;
+  border-color: #568701;
 }
+
 .btn-dark:hover {
-  background-color: #000;
+  background-color: #6a9b1f;  
+  border-color: #6a9b1f;
+  color: #fff;
 }
 
 .hero-image {

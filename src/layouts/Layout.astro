@@ -4,13 +4,13 @@
 <html lang="en">
    <head>
       <meta charset="utf-g">
-      <meta name="title" content="Meditex">
+      <meta name="title" content="Naivaidya-HealthCare">
       <meta property="fb:app_id" content="312" />
       <meta property="og:type" content="Medical" />
       <meta property="og:url" content="http://steelthemes.com/demo/Elango/meditex-final"/>
-      <meta property="og:title" content="Meditex">
+      <meta property="og:title" content="Naivaidya-HealthCare">
       <meta property="og:image" content="/assets/image/fbimg-210x210.jpg">
-      <meta property="og:description" content="Meditex is html 5 Template">
+      <meta property="og:description" content="Naivaidya-HealthCare">
       <meta name="full-screen" content="yes">
       <meta name="theme-color" content="#17413F">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -71,7 +71,7 @@
             <slot />
          </main>
          
-         <div class="contact_through">
+    <div class="contact_through">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-6">
@@ -111,6 +111,33 @@
 </div>
 
 <style>
+    .contact_through .row {
+        display: flex;
+        justify-content: center; 
+        align-items: flex-start; 
+        gap: 50px; 
+        flex-wrap: wrap; 
+    }
+
+    .contact_through .col-lg-3 {
+        flex: 0 0 auto;
+        width: auto;
+    }
+
+    .contact_through_inner {
+        display: flex;
+        align-items: center; 
+        min-height: 100px;  
+    }
+
+    .contact_through_inner .icon {
+        margin-right: 15px; 
+    }
+
+    .contact_through_inner p {
+        margin: 0;
+    }
+
     .contact_through_inner a {
         color: inherit;
         text-decoration: none;
@@ -168,7 +195,7 @@
                 <div class="footer-widget first">
                     <h2>ABOUT US</h2>
                     <div class="footer-text">
-                        <p>Our mission at Naivaidya is to provide exceptional healthcare in a safe, welcoming space that supports every step of your wellness journey. Beyond treating illness, we inspire healthier living through care, service, and genuine connection earning the trust of our community over the years.</p>
+                        <p>Our mission at Naivaidya is to provide exceptional <br> healthcare in a safe, welcoming space that supports <br> every step of your wellness journey. Beyond treating <br> illness, we inspire healthier living through care, service, <br> and genuine connection earning the trust of our whole <br> community over the years.</p>
                         <ul class="social-media">
                             <li><a href="YOUR_LINKEDIN_URL" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                             <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><i class="fa fa-instagram"></i></a></li>
@@ -262,9 +289,8 @@
                      </div>
                      <div class="right">
                         <ul>
-                           <li><a href="#">Privacy Policy    </a></li>
-                           <li><a href="#"> Terms & Conditions   </a></li>
-                           <li><a href="#">   Help Center</a></li>
+                           <li><a href="/privacy">Privacy Policy    </a></li>
+                           <li><a href="/termsandcondition"> Terms & Conditions   </a></li>
                         </ul>
                      </div>
                   </div>
