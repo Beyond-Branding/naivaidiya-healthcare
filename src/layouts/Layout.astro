@@ -71,6 +71,7 @@
             <slot />
          </main>
          
+
     <div class="contact_through">
     <div class="container">
         <div class="row">
@@ -186,7 +187,34 @@
     ::-webkit-scrollbar-thumb:hover {
         background-color: #113231;
     }
+
+    @media (max-width: 768px) {
+    .contact_through .row {
+        flex-direction: column;   
+        gap: 20px;               
+        align-items: stretch;    
+    }
+
+    .contact_through_inner {
+        flex-direction: column;  
+        text-align: center;      
+        justify-content: center;
+    }
+
+    .contact_through_inner .icon {
+        margin-right: 0;         
+        margin-bottom: 10px;     
+        font-size: 24px;         
+    }
+
+    .contact_through_inner p {
+        font-size: 14px;         
+    }
+}
+
 </style>
+
+
 
     <div class="footer home-one">
     <div class="container">

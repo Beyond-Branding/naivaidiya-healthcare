@@ -2114,17 +2114,26 @@ textarea:focus {
 --------------------------------------------*/
 
 .map-section {
-	padding: 0px 0px 0px;
-	position: relative;
+    height: auto;
+    position: relative;
+}
+.map-section #leaflet-map {
+    width: 100%;
+    min-height: 300px;
+    height: 480px; 
 }
 
-.map-section .container-fluid {
-	padding: 0px;
+@media (max-width: 768px) {
+    .map-section #leaflet-map {
+        height: 350px;
+    }
+}
+@media (max-width: 576px) {
+    .map-section #leaflet-map {
+        height: 300px;
+    }
 }
 
-.map-section .google-map {
-	height: 545px;
-}
 
 .get-in-touch {
 	position: relative;
