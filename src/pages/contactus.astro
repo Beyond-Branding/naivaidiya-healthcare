@@ -9,9 +9,39 @@ import Layout from '../layouts/Layout.astro';
     
     <style>
         #leaflet-map {
-            height: 480px;
             width: 100%;
+            min-height: 300px;   
+            height: 480px;       
+            display: block;
         }
+
+        @media (max-width: 992px) {
+            #leaflet-map {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #leaflet-map {
+                height: 350px;
+            }
+            .map-section {
+                padding: 0 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            #leaflet-map {
+                height: 320px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            #leaflet-map {
+                height: 300px;
+            }
+        }
+
         .directions-button {
             display: inline-block;
             margin-top: 10px;
@@ -22,24 +52,71 @@ import Layout from '../layouts/Layout.astro';
             border-radius: 5px;
             text-align: center;
         }
+
+        .contact_address {
+            padding: 40px 0;
+        }
+
+        .contact_address_inner {
+            margin-bottom: 30px;
+        }
+
+        .contact_social_media ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+        }
+
+        .contact_social_media ul li a {
+            font-size: 18px;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .contact_social_media ul li a:hover {
+            color: #007bff;
+        }
+
+        @media (max-width: 991px) {
+            .contact_address .row {
+                display: flex;
+                flex-direction: column;
+            }
+            .contact_address .col-lg-4,
+            .contact_address .col-lg-8 {
+                width: 100%;
+                max-width: 100%;
+            }
+            .contact_address_inner {
+                order: 2; 
+            }
+            .contact_pg_form {
+                order: 3; 
+                margin-top: 20px;
+            }
+        }
     </style>
 
+    <!-- Map Section -->
     <section class="map-section">
         <div class="map-outer">
             <div id="leaflet-map"></div>
         </div>
     </section>
     
+    <!-- Contact Info & Form -->
     <div class="contact_address">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12">
+                
+                <!-- Contact Details -->
+                <div class="col-lg-4 col-md-12">
                     <div class="contact_address_inner">
                         <div class="contact_our_office">
                             <h2><span>Address</span></h2>
                             <p>2nd Floor, Advani Chambers, 574, August Kranti Rd, Kemps Corner, 
-Malabar Hill, Mumbai, Maharashtra 400026
-                            </p>
+Malabar Hill, Mumbai, Maharashtra 400026</p>
                         </div>
                         <div class="contact_get_in_touch">
                             <h2>Get in <span>Touch</span></h2>
@@ -49,7 +126,7 @@ Malabar Hill, Mumbai, Maharashtra 400026
                             </div>
                             <div class="phone">
                                 <p>Phone number<br/>
-                                    <a href="tel:8591420775" class="phne">(+91) 8591420775</a> </p>
+                                    <a href="tel:8591420775" class="phne">(+91) 8591420775</a></p>
                             </div>
                         </div>
                         <div class="contact_social_media">
@@ -57,14 +134,13 @@ Malabar Hill, Mumbai, Maharashtra 400026
                                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                
-                <div class="col-lg-8 col-md-8 col-sm-12">
+                <!-- Contact Form -->
+                <div class="col-lg-8 col-md-12">
                     <div class="contact_pg_form">
                         <form id="contact-form" method="post" action="https://formspree.io/f/your_form_id" role="form">
                             <div class="messages"></div>
@@ -78,7 +154,7 @@ Malabar Hill, Mumbai, Maharashtra 400026
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input id="form_email" type="email" name="email" placeholder=" Email *" required="required" data-error="Valid email is required.">
+                                            <input id="form_email" type="email" name="email" placeholder="Email *" required="required" data-error="Valid email is required.">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -102,11 +178,12 @@ Malabar Hill, Mumbai, Maharashtra 400026
                         </form>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 
-
+    <!-- Leaflet Script -->
     <script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
@@ -143,5 +220,13 @@ Malabar Hill, Mumbai, Maharashtra 400026
 
         marker.bindPopup(popupContent);
 
+        setTimeout(() => {
+            map.invalidateSize();
+        }, 500);
+
+        window.addEventListener("resize", () => {
+            map.invalidateSize();
+        });
     </script>
+
 </Layout>
