@@ -48,7 +48,7 @@
 		margin-bottom: 0px;
 	}
 	.home-page-one .main-slider .slide {
-		padding: 190px 0px 0px!important;
+		padding: 0px 0px 0px!important;
 	}
 	.home-page-two .main-slider h1 {
 		font-size: 26px;
@@ -147,7 +147,7 @@
 		font-size: 14px;
 	}
 	.home-page-one .main-slider .slide {
-		padding: 80px 0px 0px!important;
+		padding: 0px 0px 0px!important;
 	}
 	.home-page-two .main-slider h1 {
 		font-size: 22px!important;
@@ -380,7 +380,7 @@
 		padding: 0px;
 	}
 	.main-slider .slide {
-		padding-top: 50px;
+		padding-top: 0px;
 	}
 }
 
