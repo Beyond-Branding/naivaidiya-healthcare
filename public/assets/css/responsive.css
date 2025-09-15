@@ -292,12 +292,13 @@
 }
 
 
+
 /*--------540-----------*/
 
 @media only screen and (max-width: 540px) {
 	/*------------.department_inner---------------*/
 	.department_inner .department_icon_content {
-		width: 100%;
+		/* width: 100%; */
 		padding: 35px;
 	}
 	/*-----------------recent-tags-------------------*/
