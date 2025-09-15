@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import "@emailjs/browser";
 ---
 <Layout>
 
@@ -140,48 +141,70 @@ Malabar Hill, Mumbai, Maharashtra 400026</p>
                 </div>
 
                 <!-- Contact Form -->
-                <div class="col-lg-8 col-md-12">
-                    <div class="contact_pg_form">
-                        <form id="contact-form" method="post" action="https://formspree.io/f/your_form_id" role="form">
-                            <div class="messages"></div>
-                            <div class="controls">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input id="form_name" type="text" name="name" placeholder="Name *" required="required" data-error="Name is required.">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input id="form_email" type="email" name="email" placeholder="Email *" required="required" data-error="Valid email is required.">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input id="form_phone" type="text" name="phone" placeholder="Phone *" required="required" data-error="Phone is required.">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <textarea id="form_message" name="message" placeholder="Message " rows="6" required="required" data-error="Please, leave us a message."></textarea>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="submit" class="theme-btn btn-send" value="Send message">
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
+<div class="col-lg-8 col-md-12">
+  <div class="contact_pg_form">
+    <form id="contact-form">
+      <div class="messages"></div>
+      <div class="controls">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input id="form_name" type="text" name="name" placeholder="Name *" required data-error="Name is required.">
+              <div class="help-block with-errors"></div>
             </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input id="form_email" type="email" name="email" placeholder="Email *" required data-error="Valid email is required.">
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <input id="form_phone" type="text" name="phone" placeholder="Phone *" required data-error="Phone is required.">
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <textarea id="form_message" name="message" placeholder="Message" rows="6" required data-error="Please, leave us a message."></textarea>
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <input type="submit" class="theme-btn btn-send" value="Send message">
+          </div>
         </div>
-    </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script type="module">
+  import emailjs from "@emailjs/browser";
+
+  const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_gwmvxe8",   
+      "template_lrqh0th",  
+      "#contact-form",     
+      "b8e_uW9KrxruGWal1"   
+    ).then(
+      () => {
+        alert("Message sent successfully!");
+        form.reset();
+      },
+      (error) => {
+        console.error("EmailJS Error:", error);
+        alert("Failed to send message. Please try again later.");
+      }
+    );
+  });
+</script>
 
     <!-- Leaflet Script -->
     <script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
