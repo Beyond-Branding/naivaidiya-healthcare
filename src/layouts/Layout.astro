@@ -1,396 +1,485 @@
 ---
+
 ---
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-   <head>
-      <meta charset="utf-g">
-      <meta name="title" content="Naivaidya-HealthCare">
-      <meta property="fb:app_id" content="312" />
-      <meta property="og:type" content="Medical" />
-      <meta property="og:url" content="http://steelthemes.com/demo/Elango/meditex-final"/>
-      <meta property="og:title" content="Naivaidya-HealthCare">
-      <meta property="og:image" content="/assets/image/fbimg-210x210.jpg">
-      <meta property="og:description" content="Naivaidya-HealthCare">
-      <meta name="full-screen" content="yes">
-      <meta name="theme-color" content="#17413F">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-      <title>Naivaidya-HealthCare</title>
-      <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-      <link rel="stylesheet" type="text/css" href="/assets/css/responsive.css">
-      <link rel="stylesheet" type="text/css" href="/assets/fonts/font/flaticon.css">
-      <link rel="icon" type="image/png" href="/assets/image/fav/logo32.png" sizes="32x32">
-      <link rel="icon" type="image/png" href="/assets/image/fav/logo16.png" sizes="16x16">
-   </head>
-   <body class="sbar_color_one">
-      <div class="preloader"></div>
-      <div class="page-wapper home-page-one">
-         <header class="site-header" id="header-one">
-    <div class="container">
-        <div class="row clearfix">
-            <div class="col-lg-12">
-                <div class="float-right ">
-                    <div class="inner-sec">
-                        </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="navbar navbar-expand-lg bsnav bsnav-sticky bsnav-sticky-slide">
+  <head>
+    <meta charset="utf-g" />
+    <meta name="title" content="Naivaidya-HealthCare" />
+    <meta property="fb:app_id" content="312" />
+    <meta property="og:type" content="Medical" />
+    <meta
+      property="og:url"
+      content="http://steelthemes.com/demo/Elango/meditex-final"
+    />
+    <meta property="og:title" content="Naivaidya-HealthCare" />
+    <meta property="og:image" content="/assets/image/fbimg-210x210.jpg" />
+    <meta property="og:description" content="Naivaidya-HealthCare" />
+    <meta name="full-screen" content="yes" />
+    <meta name="theme-color" content="#17413F" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>Naivaidya-HealthCare</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/fonts/font/flaticon.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/image/fav/logo32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/image/fav/logo16.png"
+      sizes="16x16"
+    />
+  </head>
+  <body class="sbar_color_one">
+    <div class="preloader"></div>
+    <div class="page-wapper home-page-one">
+      <header class="site-header" id="header-one">
         <div class="container">
-            <a class="navbar-brand" href="/"><img src="/assets/image/logohead.png" class="img-fluid" alt="img"></a>
-            <button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
+          <div class="row clearfix">
+            <div class="col-lg-12">
+              <div class="float-right">
+                <div class="inner-sec"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="navbar navbar-expand-lg bsnav bsnav-sticky bsnav-sticky-slide"
+        >
+          <div class="container">
+            <a
+              class="navbar-brand"
+              href="/"
+              style="display:block; height: 5rem;"
+              ><img
+                src="/assets/image/logohead.png"
+                style="height: 100% !important; width: auto !important;"
+                class="img-fluid"
+                alt="img"
+              /></a
+            >
+            <button class="navbar-toggler toggler-spring"
+              ><span class="navbar-toggler-icon"></span></button
+            >
             <div class="collapse navbar-collapse">
-                <ul class="navbar-nav navbar-mobile ml-auto mr-auto">
+              <ul class="navbar-nav navbar-mobile ml-auto mr-auto">
+                <li
+                  class:list={[
+                    "nav-item dropdown",
+                    { activee: Astro.url.pathname === "/" },
+                  ]}
+                >
+                  <a class="nav-link link_hd" href="/"> Home </a>
+                </li>
 
-                    <li class:list={[ 'nav-item dropdown', { activee: Astro.url.pathname === '/' } ]}>
-                        <a class="nav-link link_hd" href="/"> Home </a>
-                    </li>
+                <li
+                  class:list={[
+                    "nav-item dropdown",
+                    { activee: Astro.url.pathname === "/aboutus" },
+                  ]}
+                >
+                  <a class="nav-link link_hd" href="/aboutus"> About Us </a>
+                </li>
 
-                    <li class:list={[ 'nav-item dropdown', { activee: Astro.url.pathname === '/aboutus' } ]}>
-                        <a class="nav-link link_hd" href="/aboutus"> About Us </a>
-                    </li>
+                <li
+                  class:list={[
+                    "nav-item dropdown",
+                    { activee: Astro.url.pathname === "/faqs" },
+                  ]}
+                >
+                  <a class="nav-link link_hd" href="/faqs"> FAQ </a>
+                </li>
 
-                    <li class:list={[ 'nav-item dropdown', { activee: Astro.url.pathname === '/faqs' } ]}>
-                        <a class="nav-link link_hd" href="/faqs"> FAQ </a>
-                    </li>
-
-                    <li class:list={[ 'nav-item dropdown', { activee: Astro.url.pathname === '/contactus' } ]}>
-                        <a class="nav-link link_hd" href="/contactus"> Contact Us </a>
-                    </li>
-
-                </ul>
+                <li
+                  class:list={[
+                    "nav-item dropdown",
+                    { activee: Astro.url.pathname === "/contactus" },
+                  ]}
+                >
+                  <a class="nav-link link_hd" href="/contactus"> Contact Us </a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-    </div>
-</header>
+      </header>
 
-         <main class="main-content">
-            <slot />
-         </main>
-         
+      <main class="main-content">
+        <slot />
+      </main>
 
-    <div class="contact_through">
-    <div class="container">
-        <div class="row">
+      <div class="contact_through">
+        <div class="container">
+          <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-6">
-                <div class="contact_through_inner">
-                    <span class="flaticon-phone-1 icon"></span>
-                    <p>Emergency Cases: <br/> 
-                        <a href="tel:+918591420775">+91 8591420775</a>
-                    </p>
-                </div>
+              <div class="contact_through_inner">
+                <span class="flaticon-phone-1 icon"></span>
+                <p>
+                  Emergency Cases: <br />
+                  <a href="tel:+918591420775">+91 8591420775</a>
+                </p>
+              </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
-                <div class="contact_through_inner">
-                    <span class="flaticon-placeholder icon"></span>
-                    <a href="https://www.google.com/maps/search/?api=1&query=2nd+Floor,+Advani+Chambers,+574,+August+Kranti+Rd,+Kemps+Corner,+Malabar+Hill,+Mumbai,+Maharashtra+400026" target="_blank" rel="noopener noreferrer">
-                        <p style="font-size: 15px;">2nd Floor, Advani Chambers, 574, August Kranti Rd, Kemps Corner, Malabar Hill, Mumbai, Maharashtra 400026</p>
-                    </a>
-                </div>
+              <div class="contact_through_inner">
+                <span class="flaticon-placeholder icon"></span>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=2nd+Floor,+Advani+Chambers,+574,+August+Kranti+Rd,+Kemps+Corner,+Malabar+Hill,+Mumbai,+Maharashtra+400026"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p style="font-size: 15px;">
+                    2nd Floor, Advani Chambers, 574, August Kranti Rd, Kemps
+                    Corner, Malabar Hill, Mumbai, Maharashtra 400026
+                  </p>
+                </a>
+              </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
-                <div class="contact_through_inner">
-                    <span class="flaticon-envelope icon"></span>
-                    <p>Email Address<br/>
-                        <a href="mailto:naivaidyahealthcare@gmail.com">naivaidyahealthcare@gmail.com</a>
-                    </p>
-                </div>
+              <div class="contact_through_inner">
+                <span class="flaticon-envelope icon"></span>
+                <p>
+                  Email Address<br />
+                  <a href="mailto:naivaidyahealthcare@gmail.com"
+                    >naivaidyahealthcare@gmail.com</a
+                  >
+                </p>
+              </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
-                <div class="contact_through_inner">
-                    <span class="flaticon-calendar icon"></span>
-                    <p>Book Online<br/>
-                        <a href="/contactus">Appointment Now</a>
-                    </p>
-                </div>
+              <div class="contact_through_inner">
+                <span class="flaticon-calendar icon"></span>
+                <p>
+                  Book Online<br />
+                  <a href="/contactus">Appointment Now</a>
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
 
-<style>
-    .contact_through .row {
-        display: flex;
-        justify-content: center; 
-        align-items: flex-start; 
-        gap: 50px; 
-        flex-wrap: wrap; 
-    }
+      <style>
+        .contact_through .row {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 50px;
+          flex-wrap: wrap;
+        }
 
-    .contact_through .col-lg-3 {
-        flex: 0 0 auto;
-        width: auto;
-    }
+        .contact_through .col-lg-3 {
+          flex: 0 0 auto;
+          width: auto;
+        }
 
-    .contact_through_inner {
-        display: flex;
-        align-items: center; 
-        min-height: 100px;  
-    }
+        .contact_through_inner {
+          display: flex;
+          align-items: center;
+          min-height: 100px;
+        }
 
-    .contact_through_inner .icon {
-        margin-right: 15px; 
-    }
+        .contact_through_inner .icon {
+          margin-right: 15px;
+        }
 
-    .contact_through_inner p {
-        margin: 0;
-    }
+        .contact_through_inner p {
+          margin: 0;
+        }
 
-    .contact_through_inner a {
-        color: inherit;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
+        .contact_through_inner a {
+          color: inherit;
+          text-decoration: none;
+          transition: color 0.3s ease;
+        }
 
-    .contact_through_inner a:hover {
-        color: #568701;
-    }
+        .contact_through_inner a:hover {
+          color: #568701;
+        }
 
-    .bsnav {
-        background-color: #fff;
-    }
+        .bsnav {
+          background-color: #fff;
+        }
 
-    .bsnav .nav-link {
-        color: #000; 
-    }
+        .bsnav .nav-link {
+          color: #000;
+        }
 
-    .bsnav .nav-item:hover .nav-link,
-    .bsnav .nav-item.activee .nav-link {
-        color: #568701; 
-    }
+        .bsnav .nav-item:hover .nav-link,
+        .bsnav .nav-item.activee .nav-link {
+          color: #568701;
+        }
 
-    .site-header > .container {
-        display: none;
-    }
+        .site-header > .container {
+          display: none;
+        }
 
-    html {
-        scrollbar-width: thin;
-        scrollbar-color: #17413F #f0f0f0; 
-    }
+        html {
+          scrollbar-width: thin;
+          scrollbar-color: #17413f #f0f0f0;
+        }
 
-    ::-webkit-scrollbar {
-        width: 8px;
-    }
+        ::-webkit-scrollbar {
+          width: 8px;
+        }
 
-    ::-webkit-scrollbar-track {
-        background: #f0f0f0;
-    }
+        ::-webkit-scrollbar-track {
+          background: #f0f0f0;
+        }
 
-    ::-webkit-scrollbar-thumb {
-        background-color: #17413F;
-        border-radius: 6px;
-    }
+        ::-webkit-scrollbar-thumb {
+          background-color: #17413f;
+          border-radius: 6px;
+        }
 
-    ::-webkit-scrollbar-thumb:hover {
-        background-color: #113231;
-    }
+        ::-webkit-scrollbar-thumb:hover {
+          background-color: #113231;
+        }
 
-    @media (max-width: 768px) {
-    .contact_through .row {
-        flex-direction: column;   
-        gap: 20px;               
-        align-items: stretch;    
-    }
+        @media (max-width: 768px) {
+          .contact_through .row {
+            flex-direction: column;
+            gap: 20px;
+            align-items: stretch;
+          }
 
-    .contact_through_inner {
-        flex-direction: column;  
-        text-align: center;      
-        justify-content: center;
-    }
+          .contact_through_inner {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+          }
 
-    .contact_through_inner .icon {
-        margin-right: 0;         
-        margin-bottom: 10px;     
-        font-size: 24px;         
-    }
+          .contact_through_inner .icon {
+            margin-right: 0;
+            margin-bottom: 10px;
+            font-size: 24px;
+          }
 
-    .contact_through_inner p {
-        font-size: 14px;         
-    }
-}
+          .contact_through_inner p {
+            font-size: 14px;
+          }
+        }
+      </style>
 
-</style>
-
-
-
-    <div class="footer home-one">
-    <div class="container">
-        <div class="row">
+      <div class="footer home-one">
+        <div class="container">
+          <div class="row">
             <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
-                <div class="footer-widget first">
-                    <h2>ABOUT US</h2>
-                    <div class="footer-text">
-                        <p>Our mission at Naivaidya is to provide exceptional <br> healthcare in a safe, welcoming space that supports <br> every step of your wellness journey. Beyond treating <br> illness, we inspire healthier living through care, service, <br> and genuine connection earning the trust of our whole <br> community over the years.</p>
-                        <ul class="social-media">
-                            <li><a href="YOUR_LINKEDIN_URL" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="YOUR_FACEBOOK_URL" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        </ul>
-                    </div>
+              <div class="footer-widget first">
+                <h2>ABOUT US</h2>
+                <div class="footer-text">
+                  <p>
+                    Our mission at Naivaidya is to provide exceptional <br /> healthcare
+                    in a safe, welcoming space that supports <br /> every step of
+                    your wellness journey. Beyond treating <br /> illness, we inspire
+                    healthier living through care, service, <br /> and genuine connection
+                    earning the trust of our whole <br /> community over the years.
+                  </p>
+                  <ul class="social-media">
+                    <li>
+                      <a href="YOUR_LINKEDIN_URL" target="_blank"
+                        ><i class="fa fa-linkedin"></i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="YOUR_INSTAGRAM_URL" target="_blank"
+                        ><i class="fa fa-instagram"></i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="YOUR_FACEBOOK_URL" target="_blank"
+                        ><i class="fa fa-facebook"></i></a
+                      >
+                    </li>
+                  </ul>
                 </div>
+              </div>
             </div>
-            
+
             <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                <div class="footer-widget two">
-                    <h2>LINKS</h2>
-                    <div class="footer-text">
-                        <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/aboutus">About Us</a></li>
-                            <li><a href="/faqs">FAQs</a></li>
-                            <li><a href="/contactus">Contact Us </a></li>
-                        </ul>
-                    </div>
+              <div class="footer-widget two">
+                <h2>LINKS</h2>
+                <div class="footer-text">
+                  <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/aboutus">About Us</a></li>
+                    <li><a href="/faqs">FAQs</a></li>
+                    <li><a href="/contactus">Contact Us </a></li>
+                  </ul>
                 </div>
+              </div>
             </div>
 
             <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12">
-                <div class="footer-widget third">
-                    <h2>Book An Appointment</h2>
-                    <div class="footer-text">
-                        <p>Your health is our priority schedule your visit today for personalized care</p>
-                        <form>
-                            <div class="form-group">
-                                <button class="theme-btn" type="button" onclick="window.location.href='/contactus';">Book Now</button>
-                            </div>
-                        </form>
+              <div class="footer-widget third">
+                <h2>Book An Appointment</h2>
+                <div class="footer-text">
+                  <p>
+                    Your health is our priority schedule your visit today for
+                    personalized care
+                  </p>
+                  <form>
+                    <div class="form-group">
+                      <button
+                        class="theme-btn"
+                        type="button"
+                        onclick="window.location.href='/contactus';"
+                        >Book Now</button
+                      >
                     </div>
+                  </form>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-
-<style>
-    .footer.home-one {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    .footer-widget.two ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    .footer-widget.two ul li {
-        margin-bottom: 10px; 
-    }
-    .footer-widget.two ul li a {
-        color: #888888; 
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-    .footer-widget.two ul li a:hover {
-        color: #568701; 
-    }
-
-    .social-media {
-        list-style: none;
-        padding: 0;
-        margin-top: 15px;
-    }
-    .social-media li {
-        display: inline-block;
-        margin-right: 15px;
-    }
-    .social-media li a {
-        color: inherit;
-        font-size: 18px; 
-        transition: color 0.3s ease;
-    }
-    .social-media li a:hover {
-        color: #568701;
-    }
-</style>
-
-         </div>
-         
-         <div class="footer-last home-one">
-            <div class="container">
-               <div class="row clearfix">
-                  <div class="col-lg-12">
-                     <div class="left">
-                        <p>&copy; 2025 Website Designed & Developed by <span>Beyond Branding</span></p>
-                     </div>
-                     <div class="right">
-                        <ul>
-                           <li><a href="/privacy">Privacy Policy </a></li>
-                           <li><a href="/termsandcondition">Terms & Conditions </a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-
-
-         <!-- <a href="#" id="scroll" class="default-bg" style="display: none;"><span></span></a> -->
-         </div>
-
-      <div class="bsnav-mobile">
-         <div class="bsnav-mobile-overlay"></div>
-         <div class="navbar">
-            <button class="navbar-toggler toggler-spring mobile-toggler"><span class="fa fa-close"></span></button>
-         </div>
       </div>
-      <script is:inline src="/assets/js/jquery-3.3.1.min.js"></script>
-      <script is:inline src="/assets/js/popper.min.js" ></script>
-      <script is:inline src="/assets/js/bootstrap.min.js" ></script>
-      <script is:inline src="/assets/js/owl.js"></script>  
-      <script is:inline src="/assets/js/bsnav.min.js"></script>
-      <script is:inline src="/assets/js/jquery-ui.js"></script>
-      <script is:inline src="/assets/js/SmoothScroll.min.js"></script>
-      <script is:inline src="/assets/js/validator.min.js"></script>  
-      <script is:inline src="/assets/js/contact.js"></script>   
-      <script is:inline src="/assets/js/appear.js"></script>   
-      <script is:inline src="/assets/js/script.js"></script>
-      <script is:inline src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
-      <script is:inline src="/assets/js/gmaps.js"></script>
-      <script is:inline src="/assets/js/map-script.js"></script>
-
-      <!--WhatsApp Floater -->
-      <a 
-        href="https://wa.me/918591420775?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20Naivaidya%20services." 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        class="whatsapp-floater"
-      >
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-          alt="WhatsApp" 
-          class="whatsapp-icon"
-        />
-      </a>
 
       <style>
-        .whatsapp-floater {
-          position: fixed;
-          bottom: 40px;
-          right: 20px;
-          width: 60px;
-          height: 60px;
-          background-color: #25D366;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-          cursor: pointer;
-          z-index: 9999;
-          transition: transform 0.3s ease;
+        .footer.home-one {
+          padding-top: 60px;
+          padding-bottom: 60px;
         }
-        .whatsapp-floater:hover {
-          transform: scale(1.1);
+
+        .footer-widget.two ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
         }
-        .whatsapp-icon {
-          width: 45px;
-          height: 45px;
+        .footer-widget.two ul li {
+          margin-bottom: 10px;
+        }
+        .footer-widget.two ul li a {
+          color: #888888;
+          text-decoration: none;
+          transition: color 0.3s ease;
+        }
+        .footer-widget.two ul li a:hover {
+          color: #568701;
+        }
+
+        .social-media {
+          list-style: none;
+          padding: 0;
+          margin-top: 15px;
+        }
+        .social-media li {
+          display: inline-block;
+          margin-right: 15px;
+        }
+        .social-media li a {
+          color: inherit;
+          font-size: 18px;
+          transition: color 0.3s ease;
+        }
+        .social-media li a:hover {
+          color: #568701;
         }
       </style>
-   </body>
-</html>
+    </div>
 
+    <div class="footer-last home-one">
+      <div class="container">
+        <div class="row clearfix">
+          <div class="col-lg-12">
+            <div class="left">
+              <p>
+                &copy; 2025 Website Designed & Developed by <span
+                  >Beyond Branding</span
+                >
+              </p>
+            </div>
+            <div class="right">
+              <ul>
+                <li><a href="/privacy">Privacy Policy </a></li>
+                <li><a href="/termsandcondition">Terms & Conditions </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <a href="#" id="scroll" class="default-bg" style="display: none;"><span></span></a> -->
+  </body>
+
+  <div class="bsnav-mobile">
+    <div class="bsnav-mobile-overlay"></div>
+    <div class="navbar">
+      <button class="navbar-toggler toggler-spring mobile-toggler"
+        ><span class="fa fa-close"></span></button
+      >
+    </div>
+  </div>
+  <script is:inline src="/assets/js/jquery-3.3.1.min.js"></script>
+  <script is:inline src="/assets/js/popper.min.js"></script>
+  <script is:inline src="/assets/js/bootstrap.min.js"></script>
+  <script is:inline src="/assets/js/owl.js"></script>
+  <script is:inline src="/assets/js/bsnav.min.js"></script>
+  <script is:inline src="/assets/js/jquery-ui.js"></script>
+  <script is:inline src="/assets/js/SmoothScroll.min.js"></script>
+  <script is:inline src="/assets/js/validator.min.js"></script>
+  <script is:inline src="/assets/js/contact.js"></script>
+  <script is:inline src="/assets/js/appear.js"></script>
+  <script is:inline src="/assets/js/script.js"></script>
+  <script
+    is:inline
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  <script is:inline src="/assets/js/gmaps.js"></script>
+  <script is:inline src="/assets/js/map-script.js"></script>
+
+  <!--WhatsApp Floater -->
+  <a
+    href="https://wa.me/918591420775?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20Naivaidya%20services."
+    target="_blank"
+    rel="noopener noreferrer"
+    class="whatsapp-floater"
+  >
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+      alt="WhatsApp"
+      class="whatsapp-icon"
+    />
+  </a>
+
+  <style>
+    .whatsapp-floater {
+      position: fixed;
+      bottom: 40px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      z-index: 9999;
+      transition: transform 0.3s ease;
+    }
+    .whatsapp-floater:hover {
+      transform: scale(1.1);
+    }
+    .whatsapp-icon {
+      width: 45px;
+      height: 45px;
+    }
+  </style>
+</html>
