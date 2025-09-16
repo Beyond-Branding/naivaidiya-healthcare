@@ -30,6 +30,29 @@
     max-width: 4.1666%;
 }
 
+.appont_sec_inner input,
+.appont_sec_inner button {
+  height: 40px;        
+  font-size: 14px;   
+  padding: 8px 12px; 
+}
+
+.appont_sec_inner .theme-btn {
+  height: 45px;        
+  font-size: 14px;
+}
+
+.appont_sec_inner h6 {
+  margin-bottom: 6px;
+}
+
+.appont_sec_inner a {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+
 
 /* === DEPARTMENT SECTION === */
 .department_icon_content {
@@ -106,6 +129,15 @@
 .best-doctor-outer .content-inner.expanded p {
     max-height: 1000px;
 }
+
+.best-doctor-outer .image img {
+  object-fit: cover;        
+  object-position: center top; 
+  width: 100%;
+  height: 350px;            
+  border-radius: 8px;       
+}
+
 
 .read-more-btn {
     color: #568701;
