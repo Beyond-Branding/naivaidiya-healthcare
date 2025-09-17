@@ -136,6 +136,10 @@
   align-items: center;
 }
 
+.hero.slide.active:first-child .left .content {
+  margin-top: -25px; /* adjust as needed */
+}
+
 .left .content {
   max-width: 600px;
   margin-left: 25%;
@@ -183,6 +187,23 @@
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+}
+
+/* Mobile only (max-width: 768px) */
+@media (max-width: 768px) {
+  .btn {
+    padding: 0.35rem 0.9rem;  
+    font-size: 12px;         
+    border-radius: 4px;
+  }
+
+  .btns {
+    margin-top: 0.5rem;       
+  }
+
+  .left .desc {
+    margin-bottom: 0.8rem;    
+  }
 }
 
 .btn.dark {
