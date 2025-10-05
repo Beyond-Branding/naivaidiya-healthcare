@@ -39,8 +39,8 @@
                 singleItem: false,
                 smartSpeed: 700,
                 autoHeight: false,
-                autoplay: true,
-                autoplayTimeout: 10000,
+                // autoplay: true,
+                // autoplayTimeout: 10000,
                 navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
                 responsive: {
                     0: {

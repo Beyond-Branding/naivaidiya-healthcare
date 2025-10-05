@@ -140,11 +140,11 @@ import Layout from "../layouts/Layout.astro";
               </div>
             </div>
             <div class="contact_social_media">
-              <ul>
+              <!--  <ul>
                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              </ul>
+              </ul> -->
             </div>
           </div>
         </div>
@@ -261,7 +261,17 @@ import Layout from "../layouts/Layout.astro";
           const lat = 18.96400537572311;
           const lng = 72.80534977054722;
           const zoom = 16;
-          const map = L.map("leaflet-map").setView([lat, lng], zoom);
+          const map = L.map("leaflet-map", {
+            center: [lat, lng],
+            zoom: zoom,
+            dragging: false,
+            touchZoom: false,
+            scrollWheelZoom: false,
+            doubleClickZoom: false,
+            boxZoom: false,
+            keyboard: false,
+            zoomControl: false,
+          }).setView([lat, lng], zoom);
 
           L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
             maxZoom: 19,

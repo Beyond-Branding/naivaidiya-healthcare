@@ -1,5 +1,4 @@
 <section class="hero-slider">
-
   <!-- Slide 1 (Image) -->
   <div class="hero slide active">
     <div class="left">
@@ -7,11 +6,13 @@
         <h1>Welcome To <span><strong></strong>NAIVAIDYA</span></h1>
         <p class="subtitle">Where Health Feels Like Home.</p>
         <p class="desc">
-          At Naivaidya, we combine compassionate, personalized care with
-          clinical expertise to help you move better, recover faster, and
-          live pain-free. From physiotherapy and women's health to geriatric
-          support, our treatments are designed to restore mobility and
-          improve quality of life.
+          At Naivaidya, we are equipped with state of the art facilities, We
+          offer a comprehensive range of Diagnostics including Pathology, X-Ray,
+          ECG, Sonography, 2D Echo, Stress Tests, and PFTs ensuring every aspect
+          of your health is accurately assessed and cared for. Alongside, our
+          specialized services in Physiotherapy, Women&apos;s Health, and
+          Geriatric Care provide personalized treatment and support to help you
+          regain strength, restore balance, and live healthier every day.
         </p>
         <div class="btns">
           <a href="/aboutus" class="btn">About Us</a>
@@ -20,7 +21,17 @@
       </div>
     </div>
     <div class="right">
-      <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755883260/WhatsApp_Image_2025-07-24_at_15.23.18_1_qpxojt.jpg" alt="Naivaidya Team" />
+      <img
+        class="desktop-only"
+        src="https://res.cloudinary.com/daoju0r3c/image/upload/v1759685805/Frame_1_4_dsbhig.png"
+        alt="Naivaidya Team"
+      />
+
+      <img
+        class="mobile-only"
+        src="https://res.cloudinary.com/daoju0r3c/image/upload/v1759683241/41c9c175-bb16-47b7-9111-2295be1b04ff_szjzwo.jpg"
+        alt="Naivaidya Team"
+      />
       <div class="gradient"></div>
     </div>
   </div>
@@ -30,10 +41,10 @@
     <div class="left">
       <div class="content">
         <h1>WELLNESS THAT <span>TRANSFORMS LIVES</span></h1>
-        
+
         <p class="desc">
-          Experience care that nurtures both body and soul, making every step
-          of your wellness journey meaningful.
+          Experience care that nurtures both body and soul, making every step of
+          your wellness journey meaningful.
         </p>
         <div class="btns">
           <a href="/aboutus" class="btn">About Us</a>
@@ -43,7 +54,10 @@
     </div>
     <div class="right">
       <video autoplay muted loop playsinline>
-        <source src="https://res.cloudinary.com/daoju0r3c/video/upload/v1755876366/slide2_yglgei.mp4" type="video/mp4" />
+        <source
+          src="https://res.cloudinary.com/daoju0r3c/video/upload/v1755876366/slide2_yglgei.mp4"
+          type="video/mp4"
+        />
       </video>
       <div class="gradient"></div>
     </div>
@@ -54,7 +68,7 @@
     <div class="left">
       <div class="content">
         <h1>YOUR SHIELD <span>YOUR STRENGTH</span></h1>
-        
+
         <p class="desc">
           Protect your health with thoughtful care and precision. Prevention
           isn't just a step it's the foundation of lifelong wellness.
@@ -67,7 +81,10 @@
     </div>
     <div class="right">
       <video autoplay muted loop playsinline>
-        <source src="https://res.cloudinary.com/daoju0r3c/video/upload/v1755876369/slide3_j1vylm.mp4" type="video/mp4" />
+        <source
+          src="https://res.cloudinary.com/daoju0r3c/video/upload/v1755876369/slide3_j1vylm.mp4"
+          type="video/mp4"
+        />
       </video>
       <div class="gradient"></div>
     </div>
@@ -78,10 +95,10 @@
     <div class="left">
       <div class="content">
         <h1>IV DRIPS, <span>REJUVENATE FROM WITHIN.</span></h1>
-        
+
         <p class="desc">
-          Replenish & Revitalize from Within Tailored nutrients to boost energy, enhance recovery,
-          and restore balance.
+          Replenish & Revitalize from Within Tailored nutrients to boost energy,
+          enhance recovery, and restore balance.
         </p>
         <div class="btns">
           <a href="/aboutus" class="btn">About Us</a>
@@ -91,7 +108,10 @@
     </div>
     <div class="right">
       <video autoplay muted loop playsinline>
-        <source src="https://res.cloudinary.com/daoju0r3c/video/upload/v1755876366/slide4_v9h0qo.mp4" type="video/mp4" />
+        <source
+          src="https://res.cloudinary.com/daoju0r3c/video/upload/v1755876366/slide4_v9h0qo.mp4"
+          type="video/mp4"
+        />
       </video>
       <div class="gradient"></div>
     </div>
@@ -105,287 +125,306 @@
 </section>
 
 <style>
-.hero-slider {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.hero {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.6s ease-in-out;
-}
-
-.hero.active {
-  opacity: 1;
-  position: relative;
-}
-
-/* Left (content) */
-.left {
-  flex: 0 0 50%;
-  background: #fff;
-  display: flex;
-  align-items: center;
-}
-
-.hero.slide.active:first-child .left .content {
-  margin-top: -25px; /* adjust as needed */
-}
-
-.left .content {
-  max-width: 600px;
-  margin-left: 25%;
-  margin-top: -40px;
-  font-family: 'Nunito Sans', sans-serif;
-  color: #6A6A6A;
-  font-size: 14px;
-}
-
-.left h1 {
-  font-size: 45px;
-  color: #2B2B2B;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.left h1 span {
-  color: #568701;
-}
-
-.left .subtitle {
-  font-size: 18px;
-  color: #6A6A6A;
-  margin-bottom: 1rem;
-  font-weight: 500;
-}
-
-.left .desc {
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-}
-
-/* Buttons */
-.btns {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.btn {
-  padding: 0.75rem 1.5rem;
-  background: #568701;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-/* Mobile only (max-width: 768px) */
-@media (max-width: 768px) {
-  .btn {
-    padding: 0.35rem 0.9rem;  
-    font-size: 12px;         
-    border-radius: 4px;
+  .hero-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
   }
 
-  .btns {
-    margin-top: 0.5rem;       
-  }
-
-  .left .desc {
-    margin-bottom: 0.8rem;    
-  }
-}
-
-.btn.dark {
-  background: #000;
-}
-
-/* Right (image/video) */
-.right {
-  flex: 0 0 50%;
-  position: relative;
-  overflow: hidden;
-}
-
-.right img,
-.right video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.right .gradient {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 1) 0%,     
-    rgba(255, 255, 255, 0.95) 8%, 
-    rgba(255, 255, 255, 0.75) 18%, 
-    rgba(255, 255, 255, 0.4) 30%, 
-    rgba(255, 255, 255, 0.15) 45%, 
-    rgba(255, 255, 255, 0) 60%     
-  );
-}
-
-
-/* Arrows */
-.arrows {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  pointer-events: none; 
-}
-
-/* Arrow buttons */
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;          
-  height: 40px;
-  display: flex;    
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;     
-  color: #568701;
-  background: rgba(255,255,255,0.9);
-  border-radius: 50%;
-  cursor: pointer;
-  user-select: none;
-  pointer-events: all;  
-  transition: all 0.3s ease;
-  z-index: 10;
-}
-
-/* Left arrow */
-.arrow.left {
-  left: 15px;
-}
-
-/* Right arrow */
-.arrow.right {
-  right: 15px;
-}
-
-.arrow:hover {
-  background: #568701;
-  color: #fff;
-}
-
-
-@media (max-width: 768px) {
-  .arrows {
-    display: none;
-  }
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
   .hero {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .right {
+    display: flex;
     width: 100%;
-    height: 250px;
-    order: 1;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
   }
 
-  .right .gradient {
-    display: none;
+  .hero.active {
+    opacity: 1;
+    position: relative;
   }
 
+  /* Left (content) */
   .left {
-    width: 100%;
-    padding: 2rem 1.5rem;
-    order: 2;
-    align-items: flex-start;
+    flex: 0 0 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero.slide.active:first-child .left .content {
+    margin-top: -25px; /* adjust as needed */
   }
 
   .left .content {
-    margin: 0 auto;
-    max-width: 100%;
-    margin-top: 1rem;
+    max-width: 600px;
+    margin-left: 25%;
+    margin-top: -40px;
+    font-family: "Nunito Sans", sans-serif;
+    color: #6a6a6a;
+    font-size: 14px;
   }
 
   .left h1 {
-    font-size: 26px;
+    font-size: 45px;
+    color: #2b2b2b;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .left h1 span {
+    color: #568701;
   }
 
   .left .subtitle {
-    font-size: 16px;
+    font-size: 18px;
+    color: #6a6a6a;
+    margin-bottom: 1rem;
+    font-weight: 500;
   }
 
   .left .desc {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
   }
-}
+
+  /* Buttons */
+  .btns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    background: #568701;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  /* Mobile only (max-width: 768px) */
+  @media (max-width: 768px) {
+    .btn {
+      padding: 0.35rem 0.9rem;
+      font-size: 12px;
+      border-radius: 4px;
+    }
+
+    .btns {
+      margin-top: 0.5rem;
+    }
+
+    .left .desc {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  .btn.dark {
+    background: #000;
+  }
+
+  /* Right (image/video) */
+  .right {
+    flex: 0 0 50%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .right img,
+  .right video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .right .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.95) 8%,
+      rgba(255, 255, 255, 0.75) 18%,
+      rgba(255, 255, 255, 0.4) 30%,
+      rgba(255, 255, 255, 0.15) 45%,
+      rgba(255, 255, 255, 0) 60%
+    );
+  }
+
+  /* Arrows */
+  .arrows {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+  }
+
+  /* Arrow buttons */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #568701;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    pointer-events: all;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  /* Left arrow */
+  .arrow.left {
+    left: 15px;
+  }
+
+  /* Right arrow */
+  .arrow.right {
+    right: 15px;
+  }
+
+  .arrow:hover {
+    background: #568701;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .arrows {
+      display: none;
+    }
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .right {
+      width: 100%;
+      height: 250px;
+      order: 1;
+    }
+
+    .right .gradient {
+      display: none;
+    }
+
+    .left {
+      width: 100%;
+      padding: 2rem 1.5rem;
+      order: 2;
+      align-items: flex-start;
+    }
+
+    .left .content {
+      margin: 0 auto;
+      max-width: 100%;
+      margin-top: 1rem;
+    }
+
+    .left h1 {
+      font-size: 26px;
+    }
+
+    .left .subtitle {
+      font-size: 16px;
+    }
+
+    .left .desc {
+      font-size: 14px;
+    }
+  }
+
+  /* Default: Hide both, will override based on media queries */
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  /* Show on mobile (max-width: 768px) */
+  @media (max-width: 768px) {
+    .mobile-only {
+      display: block;
+    }
+  }
+
+  /* Show on desktop (min-width: 769px) */
+  @media (min-width: 769px) {
+    .desktop-only {
+      display: block;
+    }
+  }
 </style>
 
-
 <script>
-const slides = document.querySelectorAll('.hero-slider .slide');
-const prev = document.querySelector('.arrow.left');
-const next = document.querySelector('.arrow.right');
-let current = 0;
+  const slides = document.querySelectorAll(".hero-slider .slide");
+  const prev = document.querySelector(".arrow.left");
+  const next = document.querySelector(".arrow.right");
+  let current = 0;
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.remove('active');
-    if (i === index) slide.classList.add('active');
-  });
-}
-
-if (prev && next) {
-  prev.addEventListener('click', () => {
-    current = (current - 1 + slides.length) % slides.length;
-    showSlide(current);
-  });
-
-  next.addEventListener('click', () => {
-    current = (current + 1) % slides.length;
-    showSlide(current);
-  });
-}
-
-let startX = 0;
-let endX = 0;
-const slider = document.querySelector('.hero-slider');
-
-slider.addEventListener('touchstart', (e) => {
-  startX = e.touches[0].clientX;
-});
-
-slider.addEventListener('touchend', (e) => {
-  endX = e.changedTouches[0].clientX;
-  handleSwipe();
-});
-
-function handleSwipe() {
-  if (startX - endX > 50) {
-    current = (current + 1) % slides.length;
-    showSlide(current);
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      if (i === index) slide.classList.add("active");
+    });
   }
-  if (endX - startX > 50) {
-    current = (current - 1 + slides.length) % slides.length;
-    showSlide(current);
+
+  if (prev && next) {
+    prev.addEventListener("click", () => {
+      current = (current - 1 + slides.length) % slides.length;
+      showSlide(current);
+    });
+
+    next.addEventListener("click", () => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    });
   }
-}
+
+  let startX = 0;
+  let endX = 0;
+  const slider = document.querySelector(".hero-slider");
+
+  slider.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  slider.addEventListener("touchend", (e) => {
+    endX = e.changedTouches[0].clientX;
+    handleSwipe();
+  });
+
+  function handleSwipe() {
+    if (startX - endX > 50) {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }
+    if (endX - startX > 50) {
+      current = (current - 1 + slides.length) % slides.length;
+      showSlide(current);
+    }
+  }
 </script>
-

@@ -1,58 +1,87 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import '../styles/aboutus.css';
+import Layout from "../layouts/Layout.astro";
+import "../styles/aboutus.css";
 ---
+
 <Layout>
+  <section
+    class="hero-welcome-section"
+    style="padding: 60px 0; overflow-x: hidden;"
+  >
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 col-md-12">
+          <div class="hero-content">
+            <h1 class="hero-title">WELCOME TO <span>NAIVAIDYA,</span></h1>
+            <h2 class="hero-subtitle">
+              Where Health Feels Like <span>Home.</span>
+            </h2>
 
-<section class="hero-welcome-section" style="padding: 60px 0; overflow-x: hidden;">
-  <div class="container">
-    <div class="row align-items-center">
+            <p class="hero-description">
+              A private medical clinic led by expert consultants offering
+              consultation, diagnosis and treatment all in one place. From
+              women&apos;s health and Medical care to personalized exercise,
+              diet and nutrition plans, our integrated approach ensures accurate
+              diagnosis, effective treatment, and long-term wellness. At
+              Naivaidya, you're not just a patient - you&apos;re part of a
+              community built on trust, empathy, and excellence.
 
-      <div class="col-lg-5 col-md-12">
-        <div class="hero-content">
-          <h1 class="hero-title">WELCOME TO <span>NAIVAIDYA,</span></h1>
-          <h2 class="hero-subtitle">Where Health Feels Like <span>Home.</span></h2>
-          
-          <p class="hero-description">
-            Naivaidya is a private medical clinic dedicated to delivering Accurate Diagnosis, Effective Treatment and Long-Term Wellness. Our services range from Physiotherapy, Women's Health, and Geriatric Support to advanced Diagnostics including Pathology, X-Ray, ECG, Sonography, 2D Echo, Stress Tests, and PFTs all in one place.
+              <span id="moreText" style="display: none;"
+                >Experience healthcare where you feel cared for, supported, and
+                empowered to live your best life.</span
+              >
+            </p>
 
-            <span id="moreText" style="display: none;">
-              We also offer IV Infusion Therapy, Day Care Procedures, Vaccinations, Drugless Therapies, and Personalized Diet and Nutrition Plans, ensuring a truly integrated approach to healthcare. At Naivaidya, every patient receives compassionate, expert led care you can trust.
-            </span>
-          </p>
+            <div class="hero-buttons">
+              <button id="readMoreBtn" class="theme-btn btn-green"
+                >Read More</button
+              >
+            </div>
+          </div>
+        </div>
 
-          <div class="hero-buttons">
-  <button id="readMoreBtn" class="theme-btn btn-green">Read More</button>
-</div>
-
-
-
+        <div class="col-lg-7 col-md-12 order-first order-lg-last">
+          <div class="hero-image-container">
+            <img
+              src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755375991/WhatsApp_Image_2025-07-24_at_15.23.21_1_tphyoj.jpg"
+              alt="Naivaidya Healthcare Team"
+              class="hero-image"
+            />
+          </div>
         </div>
       </div>
-
-      <div class="col-lg-7 col-md-12 order-first order-lg-last">
-        <div class="hero-image-container">
-          <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755375991/WhatsApp_Image_2025-07-24_at_15.23.21_1_tphyoj.jpg" 
-               alt="Naivaidya Healthcare Team" class="hero-image"/>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<div class="department_listing">
+  <div class="department_listing">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="department_list_inner">
             <div class="image">
-              <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755686377/image_11_2_g81seb.png" class="img-fluid" alt="Dr. Saurabh Jain" />
+              <img
+                src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755686377/image_11_2_g81seb.png"
+                class="img-fluid"
+                alt="Dr. Saurabh Jain"
+              />
             </div>
             <div class="li_dp_content">
               <h2>Dr. Saurabh Jain</h2>
-              <h4>Consultant Physician | MBBS, DNB (Medicine), PG Diabetology (Boston), PGD Endocrinology (RCP, UK)</h4>
-              <p style="font-size: 13px;">With over 15 years of experience, Dr. Saurabh Jain specializes in Internal Medicine, with special interest in Diabetes and Cardiac care. He consults at Naivaidya Healthcare and is affiliated with Breach Candy, Sir HN Reliance Foundation, Jaslok, and Cumballa Hill Hospital. A former physician with the Indian Air Force and Railways, he holds advanced certifications from Boston University and RCP, UK. He is an active member of IMA, API, ASE, and the Jain Doctors Association, and regularly contributes to medical conferences and research.</p>
+              <h4>
+                Consultant Physician | MBBS, DNB (Medicine), PG Diabetology
+                (Boston), PGD Endocrinology (RCP, UK)
+              </h4>
+              <p style="font-size: 13px;">
+                With over 15 years of experience, Dr. Saurabh Jain specializes
+                in Internal Medicine, with special interest in Diabetes and
+                Cardiac care. He consults at Naivaidya Healthcare and is
+                affiliated with Breach Candy, Sir HN Reliance Foundation,
+                Jaslok, and Cumballa Hill Hospital. A former physician with the
+                Indian Air Force and Railways, he holds advanced certifications
+                from Boston University and RCP, UK. He is an active member of
+                IMA, API, ASE, and the Jain Doctors Association, and regularly
+                contributes to medical conferences and research.
+              </p>
             </div>
           </div>
         </div>
@@ -62,18 +91,43 @@ import '../styles/aboutus.css';
         <div class="col-lg-12">
           <div class="department_list_inner">
             <div class="image">
-              <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1758038676/Naivedya_Logo__140623-04_1_oftp66.png" class="img-fluid" alt="Dr. Zimpu Mehta Jain" />
+              <img
+                src="https://res.cloudinary.com/daoju0r3c/image/upload/v1758038676/Naivedya_Logo__140623-04_1_oftp66.png"
+                class="img-fluid"
+                alt="Dr. Zimpu Mehta Jain"
+              />
             </div>
             <div class="li_dp_content">
               <h2>Dr. Zimpu Mehta Jain</h2>
-              <h4>Consulting Obstetrician & Gynaecologist | MBBS, DGO, FCPS, DNB</h4>
-              <p style="font-size: 13px;">Dr Zimpu is a Compassionate gynecologist with 15 + years of experience in providing comprehensive women's health services, specializing in minimally invasive gynecological surgeries and high-risk pregnancies.  She also specialises in other women&apos;s health issues, such as menopause, hormone problems, contraception (birth control), and infertility and also adolescent gynecological issues. She is affiliated with Breach Candy Hospital, Asian Cancer Institute and Cumballa Hill Hospital, St Elizabeth Hospital and Ruxmani Hospital. She has proven ability to build strong patient relationships and deliver positive health outcomes. She has completed her MBBS from K.J. Somaiya Medical College, followed by her Post graduate studies from Seth G.S. Medical College & K.E.M. Hospital, Mumbai. She has undergone specialized laparoscopic training under Dr. Hafeez Rehman at Sunrise Hospital, Kochi, and has worked in the Department of Oncology- Gynaecology at Tata Memorial Hospital. Dr. Jain is a life member of FOGSI, IAGE, and the Jain Doctors Federation and has received many awards and recognition for her outstanding performance and contribution to the field.</p>
+              <h4>
+                Consulting Obstetrician & Gynaecologist | MBBS, DGO, FCPS, DNB
+              </h4>
+              <p style="font-size: 13px;">
+                Dr Zimpu is a Compassionate gynecologist with 15 + years of
+                experience in providing comprehensive women's health services,
+                specializing in minimally invasive gynecological surgeries and
+                high-risk pregnancies. She also specialises in other
+                women&apos;s health issues, such as menopause, hormone problems,
+                contraception (birth control), and infertility and also
+                adolescent gynecological issues. She is affiliated with Breach
+                Candy Hospital, Asian Cancer Institute and Cumballa Hill
+                Hospital, St Elizabeth Hospital and Ruxmani Hospital. She has
+                proven ability to build strong patient relationships and deliver
+                positive health outcomes. She has completed her MBBS from K.J.
+                Somaiya Medical College, followed by her Post graduate studies
+                from Seth G.S. Medical College & K.E.M. Hospital, Mumbai. She
+                has undergone specialized laparoscopic training under Dr. Hafeez
+                Rehman at Sunrise Hospital, Kochi, and has worked in the
+                Department of Oncology- Gynaecology at Tata Memorial Hospital.
+                Dr. Jain is a life member of FOGSI, IAGE, and the Jain Doctors
+                Federation and has received many awards and recognition for her
+                outstanding performance and contribution to the field.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-</div>
-<script src="../scripts/aboutus.js"></script>
-
+  </div>
+  <script src="../scripts/aboutus.js"></script>
 </Layout>
