@@ -1,43 +1,39 @@
 <section class="hero-slider">
   <!-- Slide 1 (Image) -->
-  <div class="hero slide active">
-    <div class="left">
-      <div class="content">
-        <h1>Welcome To <span><strong></strong>NAIVAIDYA</span></h1>
-        <p class="subtitle">Where Health Feels Like Home.</p>
-        <p class="desc">
-          At Naivaidya, we are equipped with state of the art facilities, We
-          offer a comprehensive range of Diagnostics including Pathology, X-Ray,
-          ECG, Sonography, 2D Echo, Stress Test, and PFTs ensuring every aspect
-          of your health is accurately assessed and cared for. Alongside our
-          specialised services in Internal Medicine and Women&apos;s health, we
-          provide personalized treatment and support to help you regain
-          strength, restore balance, and live healthier every day.
-        </p>
-        <div class="btns">
-          <a href="/aboutus" class="btn">About Us</a>
-          <a href="/contactus" class="btn dark">Get In Touch</a>
-        </div>
+  <div class="hero slide active first-slide">
+  <div class="left">
+    <div class="content">
+      <h1>Welcome To <span><strong></strong>NAIVAIDYA</span></h1>
+      <p class="subtitle">Where Health Feels Like Home.</p>
+      <p class="desc">
+        At Naivaidya, we are equipped with state of the art facilities, We
+        offer a comprehensive range of Diagnostics including Pathology, X-Ray,
+        ECG, Sonography, 2D Echo, Stress Test, and PFTs ensuring every aspect
+        of your health is accurately assessed and cared for. Alongside our
+        specialised services in Internal Medicine and Women&apos;s health, we
+        provide personalized treatment and support to help you regain
+        strength, restore balance, and live healthier every day.
+      </p>
+      <div class="btns">
+        <a href="/aboutus" class="btn">About Us</a>
+        <a href="/contactus" class="btn dark">Get In Touch</a>
       </div>
-    </div>
-    <div class="right">
-      <div style="padding: 8rem;">
-        <img src="/logo.png" alt="Naivaidya Team" />
-      </div>
-      <!-- <img
-        class="desktop-only"
-        src="https://res.cloudinary.com/daoju0r3c/image/upload/v1759685805/Frame_1_4_dsbhig.png"
-        alt="Naivaidya Team"
-      />
-
-      <img
-        class="mobile-only"
-        src="https://res.cloudinary.com/daoju0r3c/image/upload/v1759683241/41c9c175-bb16-47b7-9111-2295be1b04ff_szjzwo.jpg"
-        alt="Naivaidya Team"
-      /> -->
-      <div class="gradient"></div>
     </div>
   </div>
+
+  <div class="right">
+    <!-- GREEN BACKGROUND -->
+    <div class="right-bg"></div>
+
+    <!-- IMAGE ABOVE GREEN -->
+    <div class="image-wrap">
+      <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1766411396/naivaidya_golden-Photoroom_uqcvqu.png" alt="Naivaidya Team" />
+    </div>
+
+    <div class="gradient"></div>
+  </div>
+</div>
+
 
   <!-- Slide 2 (Video) -->
   <div class="hero slide">
@@ -128,6 +124,44 @@
 </section>
 
 <style>
+  /* Only for first slide */
+.first-slide .right {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Green background */
+.first-slide .right-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #031F13;
+  z-index: 0;
+}
+
+/* Image wrapper */
+.first-slide .image-wrap {
+  position: relative;
+  z-index: 2;
+  padding: 8rem;
+  transform: translate(90px, -95px);
+}
+
+/* Ensure image stays clean */
+.first-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Gradient between image & content */
+.first-slide .gradient {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
   .hero-slider {
     position: relative;
     width: 100%;
@@ -308,6 +342,39 @@
     background: #568701;
     color: #fff;
   }
+
+  /* ---------- MOBILE IMAGE CENTER & BIG ---------- */
+@media (max-width: 768px) {
+  .first-slide .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px; /* adjust if needed */
+  }
+
+  .first-slide .right-bg {
+    display: block;
+  }
+
+  .first-slide .image-wrap {
+    padding: 0;
+    transform: none; /* remove desktop movement */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .first-slide .image-wrap img {
+    width: 70%;        /* BIG image */
+    max-width: 260px;  /* control max size */
+    height: auto;
+  }
+
+  .first-slide .gradient {
+    display: none; /* cleaner look on mobile */
+  }
+}
 
   @media (max-width: 768px) {
     .arrows {

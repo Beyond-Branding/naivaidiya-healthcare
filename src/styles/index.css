@@ -1,4 +1,10 @@
 /* === APPOINTMENT SECTION === */
+.sleep-icon {
+  width: 85px;      /* adjust as needed: 32px, 40px, 48px */
+  height: auto;
+}
+
+
 .work-hours-list {
     padding-left: 0;
     list-style: none;
